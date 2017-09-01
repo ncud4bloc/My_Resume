@@ -16,6 +16,15 @@ body {
     border: 3px ridge #548ec6;
 }
 
+#contentTransparency {
+    position:absolute;
+    width: 100%;
+    height: 1424px;
+    background-color: #fff;
+    opacity: 0.5;
+    /*border: 3px ridge #548ec6;*/
+}
+
 #ncc {
     width: 40%;
     margin: -35px 10px 10px 0;
@@ -126,4 +135,37 @@ body {
 #box1 {
     height: 600px;
     border: 2px solid #000;
+}
+
+#arrows {
+    height: 30px;
+    margin-top: -285px;
+    background: none;
+    z-index: 10;
+}
+
+.arrowLR {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#lftArrow {
+    margin-left: 10px;
+    background-image: url(../IMAGES/lftArrow.png);
+    float: left;
+}
+
+#rtArrow {
+    margin-right: 30px;
+    background-image: url(../IMAGES/rtArrow.png);
+    float: right;
+}
+
+.notShown {
+    display: none;
 }
