@@ -1,0 +1,129 @@
+body {
+    width: 100%;
+    min-width: 475px;
+    background-color: #7b7b81;
+}
+
+#content {
+    width: 100%;
+    height: 1424px;
+    background-image: url(../IMAGES/issa3C.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*opacity: 0.5;*/
+    background-blend-mode: lighten;
+    border: 3px ridge #548ec6;
+}
+
+#ncc {
+    width: 40%;
+    margin: -35px 10px 10px 0;
+    float: left;
+    padding-top: 40px;
+    padding-left: 100px;
+    text-align: left;
+    font-family: "Poiret One", cursive;
+    color: #c41c1c;
+    color: #000;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+#contactBox {
+    float: left;
+    width: 265px;
+    height: 60px;
+    margin: 55px 50px 10px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.goto {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 9px 0 9px 10px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#gotoFB {
+    background-image: url(../IMAGES/fb_gray_icon.png);
+}
+
+#gotoLI {
+    background-image: url(../IMAGES/li_gray_icon.png);
+}
+
+#gotoTW {
+    background-image: url(../IMAGES/tw_gray_icon.png);
+}
+
+#gotoGH {
+    background-image: url(../IMAGES/gh_gray_icon.jpg);
+}
+
+#gotoEM {
+    background-image: url(../IMAGES/icon_emailC.png);
+}
+
+#trngHdr, #projHdr, #prevHdr {
+    height: 80px;
+    font-family: "Poiret One", cursive;
+    color: #c41c1c;
+    color: #000;
+    font-size: 42px;
+    font-weight: 900;
+    margin-top: 10px;
+    padding: 0 30px 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#prevHdr {
+    margin-top: 600px;  /* Only until I have stuff in the project window */
+}
+
+#objective, #training, #priorInfo {
+    height: 120px;
+    text-align: left;
+    font-family: "Poiret One", cursive;
+    color: #c41c1c;
+    color: #000;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 0;
+    padding: 0 30px 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.up1 {
+    margin-top: -30px;
+}
+
+.up2 {
+    margin-top: -20px;
+}
+
+#training {
+    margin-top: 0;
+}
+
+#projBox {
+    height: 600px;
+    margin-top: 15px;
+    padding-right: 0px;
+    /*background-color: aqua;
+    border-radius: 10px;
+    border: 2px solid #000;*/
+}
+
+#box1 {
+    height: 600px;
+    border: 2px solid #000;
+}

@@ -5,7 +5,6 @@ var $gotoFB = $('<div class="goto" id="gotoFB"></div>');
 var $gotoLI = $('<div class="goto" id="gotoLI"></div>');
 var $gotoTW = $('<div class="goto" id="gotoTW"></div>');
 var $gotoGH = $('<div class="goto" id="gotoGH"></div>');
-/*var $gotoEM = $('<div class="goto" id="gotoEM"></div>');*/
 var $gotoEM = $('<a class="goto" id="gotoEM" href="mailto:ncudden@sbcglobal.net"></a>');
 /*var $scrollButtons = $('<div id="scrollButtons"></div>');
 var $button1 = $('<div class="button" id="button1"></div>');
