@@ -1,14 +1,13 @@
 #ncc {
-    width: 40%;
-    margin: -5px 10px 10px 0;
+    font-size: 36px;
     padding-left: 40px;
-    font-size: 24px;
 }
+
 
 #contactBox {
     width: 205px;
     height: 50px;
-    margin: 65px 50px 10px 50px;
+    margin: 10px 50px 10px 50px;
     border-radius: 10px;
     border: 2px solid #000;
 }
@@ -21,7 +20,6 @@
 }
 
 #objective, #training, #priorInfo {
-    font-size: 30px;
     padding: 0 30px 0 40px;
 }
 
