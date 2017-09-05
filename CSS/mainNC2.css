@@ -104,7 +104,7 @@ body {
     margin-bottom: 25px;
 }
 
-#projHdrContainer {
+#projHdrContainer, #projHdrTxt {
     height: auto;
     /*margin-top: 5px;*/
     font-family: 'Encode Sans Semi Condensed', sans-serif;
