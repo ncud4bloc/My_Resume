@@ -32,6 +32,10 @@
     padding: 0 30px 0 25px;
 }
 
+.projName, .projDesc {
+    padding: 0 30px 0 25px;
+}
+
 /*#box1 {
     height: 410px;
 }
