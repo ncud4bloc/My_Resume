@@ -22,9 +22,6 @@ var nextFrame = function(){
         $('#frame7').removeClass('notShown').addClass('shown');
     } else if ($('.shown').attr('id') == 'frame7'){
         $('#frame7').removeClass('shown').addClass('notShown');
-        $('#frame8').removeClass('notShown').addClass('shown');
-    } else if ($('.shown').attr('id') == 'frame8'){
-        $('#frame8').removeClass('shown').addClass('notShown');
         $('#frame1').removeClass('notShown').addClass('shown');
     } else {
         console.log('You forgot to add the new frames!!');
@@ -36,9 +33,6 @@ var prevFrame = function(){
     $('.notShown').hide("fade",1);
     if ($('.shown').attr('id') == 'frame1'){
         $('#frame1').removeClass('shown').addClass('notShown');
-        $('#frame8').removeClass('notShown').addClass('shown');
-    } else if ($('.shown').attr('id') == 'frame8'){
-        $('#frame8').removeClass('shown').addClass('notShown');
         $('#frame7').removeClass('notShown').addClass('shown');
     } else if ($('.shown').attr('id') == 'frame7'){
         $('#frame7').removeClass('shown').addClass('notShown');
