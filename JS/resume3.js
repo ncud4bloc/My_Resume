@@ -26,7 +26,8 @@ var nextFrame = function(){
     } else {
         console.log('You forgot to add the new frames!!');
     }
-    $('.shown').show("fade",500);
+    /*$('.shown').show("fade",500);*/
+    $('.shown').slideDown(500);
 };
 
 var prevFrame = function(){
@@ -55,7 +56,8 @@ var prevFrame = function(){
     } else {
         console.log('You forgot to add the new frames!!');
     }
-    $('.shown').show("fade",500);
+    /*$('.shown').show("fade",500);*/
+    $('.shown').slideDown(500);
 };
 
 
