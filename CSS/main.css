@@ -5,7 +5,7 @@ body {
     background-color: #7b7b81;
 }
 
-#content, #contentP2 {
+#content, #contentP2, #contentP3 {
     width: 100%;
     height: 1484px;
     background-image: url(../IMAGES/issa3C.jpg);
@@ -22,7 +22,11 @@ body {
     background-image: url(../IMAGES/atk1.jpg);
 }
 
-#contentTransparency, #contentTransparencyP2 {
+#contentP3 {
+    background-image: url(../IMAGES/issa1.jpg);
+}
+
+#contentTransparency, #contentTransparencyP2, #contentTransparencyP3 {
     position:absolute;
     width: 100%;
     height: 1484px;
