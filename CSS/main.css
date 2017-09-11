@@ -39,7 +39,7 @@ body {
     /*overflow: auto;*/
 }
 
-#ncc, #nccC {
+#ncc, #nccC, #nccA {
     margin-top: 14px;
     padding-left: 100px;
     height: 50px;
