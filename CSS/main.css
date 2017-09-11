@@ -17,7 +17,7 @@ body {
 }
 
 #contentP2 {
-    height: 2050px;
+    height: 2250px;
     background-image: url(../IMAGES/atk1.jpg);
 }
 
@@ -30,7 +30,7 @@ body {
 }
 
 #contentTransparencyP2 {
-    height: 2050px;
+    height: 2250px;
 }
 
 #ncc {
@@ -158,6 +158,7 @@ body {
 
 .projName {
     height: 25px;
+    height: auto;
     text-align: left;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     color: #000;
