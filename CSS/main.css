@@ -39,7 +39,7 @@ body {
     /*overflow: auto;*/
 }
 
-#ncc {
+#ncc, #nccC {
     margin-top: 14px;
     padding-left: 100px;
     height: 50px;
@@ -50,6 +50,10 @@ body {
     font-size: 36px;
     font-weight: 900;
     background-color: rgba(255, 255, 255, 0);
+}
+
+#nccC {
+    height: auto;
 }
 
 #contactBox {
@@ -189,7 +193,7 @@ body {
     visibility: hidden;
 }
 
-#goHome {
+#goHome, #callMe, #projPage {
     height: 25px;
     text-align: center;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
@@ -267,3 +271,6 @@ body {
 .shown {
     display: block;
 }
+/*.endCtr {
+    text-align: center !important;
+}*/

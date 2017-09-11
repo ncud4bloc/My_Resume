@@ -1,6 +1,10 @@
-#ncc {
+#ncc, #nccC {
     font-size: 36px;
     padding-left: 40px;
+}
+
+#nccC {
+    height: auto;
 }
 
 
