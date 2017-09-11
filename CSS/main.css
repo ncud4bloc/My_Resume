@@ -51,6 +51,7 @@ body {
 #contactBox {
     float: right;
     width: 265px;
+    width: 215px;
     height: 60px;
     margin: 5px 50px 10px 50px;
     background-color: #fff;
@@ -71,8 +72,8 @@ body {
     background-size: cover;
 }
 
-#gotoFB {
-    background-image: url(../IMAGES/fb_gray_icon.png);
+#gotoPH {
+    background-image: url(../IMAGES/phone-icon.png);
 }
 
 #gotoLI {

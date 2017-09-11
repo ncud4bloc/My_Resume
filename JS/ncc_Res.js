@@ -65,8 +65,8 @@ var prevFrame = function(){
 
 $(function(){
     
-    $('#gotoFB').on('click',function(){
-        window.location = "https://www.facebook.com/neil.cudden/";
+    $('#gotoPH').on('click',function(){
+        window.location = "https://ncud4bloc.github.io/My_Resume/HTML/contact.html";
     });
     
     $('#gotoLI').on('click',function(){
