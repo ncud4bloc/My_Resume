@@ -7,6 +7,10 @@
     height: auto;
 }
 
+#contentP2, #contentTransparencyP2 {
+    height: 2900px;
+    /*overflow: auto;*/
+}
 
 #contactBox {
     width: 205px;

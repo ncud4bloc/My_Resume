@@ -18,6 +18,7 @@ body {
 
 #contentP2 {
     height: 2250px;
+    height: 2800px;
     /*overflow: auto;*/
     background-image: url(../IMAGES/atk1.jpg);
 }
@@ -36,6 +37,7 @@ body {
 
 #contentTransparencyP2 {
     height: 2250px;
+    height: 2800px;
     /*overflow: auto;*/
 }
 

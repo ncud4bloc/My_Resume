@@ -69,7 +69,7 @@ $(function(){
         window.location = "https://ncud4bloc.github.io/My_Resume/HTML/contact.html";
     });
     
-    $('#gotoLI').on('click',function(){
+    /*$('#gotoLI').on('click',function(){
         window.location = "https://www.linkedin.com/in/neil-cudden-60606011/";
     });
     
@@ -79,7 +79,7 @@ $(function(){
     
     $('#gotoGH').on('click',function(){
         window.location = "https://github.com/ncud4bloc/";
-    });
+    });*/
     
     $('.myIframe').css('height', $('#box1').height()+'px');
     
