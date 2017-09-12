@@ -8,7 +8,6 @@
 }
 
 #contactBox {
-    width: 141px;
     width: 115px;
     height: 40px;
     margin: 15px 50px 10px 50px;
@@ -37,14 +36,6 @@
     padding: 0 30px 0 25px;
 }
 
-.projName, .projDesc {
+.projName, .projName2, .projDesc {
     padding: 0 30px 0 25px;
 }
-
-/*#box1 {
-    height: 410px;
-}
-
-#projBox {
-    height: 410px;
-}*/

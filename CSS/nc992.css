@@ -8,12 +8,10 @@
 }
 
 #contentP2, #contentTransparencyP2 {
-    height: 2900px;
-    /*overflow: auto;*/
+    height: 3200px;
 }
 
 #contactBox {
-    width: 205px;
     width: 167px;
     height: 50px;
     margin: 10px 50px 10px 50px;
@@ -43,4 +41,8 @@
 
 .projName, .projDesc {
     padding: 0 30px 0 40px;
+}
+
+.projName2 {
+    padding: 0 30px 0 30px;
 }
