@@ -66,7 +66,11 @@ var prevFrame = function(){
 $(function(){
     
     $('#gotoPH').on('click',function(){
-        window.location = "public_html/HTML/contact.html";
+        window.location = "HTML/contactR.html";
+    });
+    
+    $('#gotoPH2').on('click',function(){
+        window.location = "contactR.html";
     });
     
     $('.myIframe').css('height', $('#box1').height()+'px');
