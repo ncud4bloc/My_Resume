@@ -66,7 +66,7 @@ var prevFrame = function(){
 $(function(){
     
     $('#gotoPH').on('click',function(){
-        window.location = "public_html/HTML/contact.html";
+        window.location = "https://ncud4bloc.github.io/My_Resume/HTML/contact_fnl.html";
     });
     
     $('.myIframe').css('height', $('#box1').height()+'px');
