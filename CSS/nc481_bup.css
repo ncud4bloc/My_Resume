@@ -3,11 +3,6 @@
     padding-left: 25px;
 }
 
-#ncc {
-    font-size: 24px;
-    height: auto;
-}
-
 #nccC {
     height: auto;
 }
@@ -15,10 +10,9 @@
 #contactBox {
     width: 115px;
     height: 40px;
-    margin: 15px 50px 0px 10px;
+    margin: 15px 50px 10px 50px;
     border-radius: 10px;
     border: 2px solid #000;
-    float: left;
 }
 
 .goto {
@@ -29,26 +23,16 @@
 }
 
 #objective, #training, #priorInfo {
-    font-size: 16px;
+    font-size: 24px;
     padding: 0 30px 0 25px;
 }
 
-#objective {
-    margin-top: 0px;
-}
-
-#trngHdr, #projHdr, #prevHdr {
-    font-size: 20px;
-    padding: 0 30px 0 25px;
-}
-
-#projHdrContainer {
+#trngHdr, #projHdr, #prevHdr, #projHdrContainer {
     font-size: 30px;
     padding: 0 30px 0 25px;
 }
 
 #projHdrTxt {
-    font-size: 16px;
     padding: 0 30px 0 25px;
 }
 

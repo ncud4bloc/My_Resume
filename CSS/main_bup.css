@@ -1,7 +1,7 @@
 body {
     width: 100%;
+    min-width: 900px;
     min-width: 560px;
-    min-width: 320px;
     background-color: #7b7b81;
 }
 
