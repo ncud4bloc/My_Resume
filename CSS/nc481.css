@@ -1,3 +1,9 @@
+body {
+    width: 100%;
+    min-width: 320px;
+    background-color: #7b7b81;
+}
+
 #ncc, #nccC, #nccA {
     font-size: 36px;
     padding-left: 25px;
@@ -43,9 +49,14 @@
 }
 
 #projHdrContainer {
+    /*width: auto;*/
     font-size: 30px;
     padding: 0 30px 0 25px;
 }
+
+/*#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
+    width: auto;
+}*/
 
 #projHdrTxt {
     font-size: 16px;
