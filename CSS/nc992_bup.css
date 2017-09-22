@@ -46,20 +46,3 @@
 .projName2 {
     padding: 0 30px 0 30px;
 }
-
-#projBox {
-    height: 590px;
-}
-
-#box1 {
-    height: 590px;
-}
-
-#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
-    height: 586px;
-}
-
-#arrows {
-    margin-top: -300px;
-    z-index: 10;
-}

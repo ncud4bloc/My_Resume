@@ -36,18 +36,22 @@
     padding: 0 30px 0 40px;
 }
 
-/*#projHdrContainer {
-    width: 100%;
+#projBox {
+   height: 490px;
+}
+
+#box1 {
+    height: 490px;
 }
 
 #frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
-    width: 100%;
-}*/
-
-#box1 {
-    height: 690px;
+   height: 486px;
 }
 
 #arrows {
-    margin-top: -350px;
+    margin-top: -250px;
+}
+
+#projPage, #goHome {
+    font-size: 28px;
 }

@@ -4,12 +4,16 @@ body {
     background-color: #7b7b81;
 }
 
+#contentP2, #contentTransparencyP2 {
+    height: 4300px;
+}
+
 #ncc, #nccC, #nccA {
     font-size: 36px;
     padding-left: 25px;
 }
 
-#ncc {
+#ncc, #nccA {
     font-size: 24px;
     height: auto;
 }
@@ -54,23 +58,36 @@ body {
     padding: 0 30px 0 25px;
 }
 
-/*#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
-    width: auto;
-}*/
-
 #projHdrTxt {
     font-size: 16px;
     padding: 0 30px 0 25px;
 }
 
 .projName, .projName2, .projDesc {
+    font-size: 20px;
     padding: 0 30px 0 25px;
 }
 
+.projDesc {
+    font-size: 16px;
+}
+
+#projBox {
+   height: 290px;
+}
+
 #box1 {
-    height: auto;
+    height: 290px;
+}
+
+#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
+   height: 286px;
 }
 
 #arrows {
-    margin-top: -200px;
+    margin-top: -150px;
+}
+
+#projPage, #goHome {
+    font-size: 18px;
 }

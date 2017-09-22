@@ -6,7 +6,7 @@ body {
 }
 
 #bdP2 {
-    min-width: 900px;
+    min-width: 320px;
 }
 
 #content, #contentP2, #contentP3 {
@@ -224,20 +224,72 @@ body {
 }
 
 #projBox {
-    height: auto;
+    /*height: auto;*/
+    height: 690px;
     margin-top: 25px;
     padding-right: 0px;
 }
 
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    height: 100% !important;
+}
+
 #box1 {
     height: 690px;
+    /*height: auto;*/
     border: 2px solid #000;
     background-color: #fff;
-    /*background-image: url(../IMAGES/issa1.jpg);
+    background-color: #93a2a2;
+    /*background-image: url(../IMAGES/Myframe_snip.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;*/
+    background-size: contain;*/
     padding-right: 0px;
+    padding-left: 0px;
+}
+
+#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
+    /*width: auto;*/
+    height: 596px;
+    height: auto;
+    height: 686px;
+    background-image: url(../IMAGES/Myframe_snip.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#frame2 {
+    background-image: url(../IMAGES/Diner_snip.jpg);
+    background-size: contain;
+}
+
+#frame3 {
+    background-image: url(../IMAGES/Newsweek_snip.jpg);
+    background-size: contain;
+}
+
+#frame4 {
+    background-image: url(../IMAGES/Calculator_snip.jpg);
+    background-size: contain;
+}
+
+#frame5 {
+    background-image: url(../IMAGES/Ttt_snip.jpg);
+    background-size: contain;
+}
+
+#frame6 {
+    background-image: url(../IMAGES/Snake_snip.jpg);
+}
+
+#frame7 {
+    background-image: url(../IMAGES/Minesweeper_snip.jpg);
 }
 
 #arrows {
@@ -274,5 +326,7 @@ body {
 }
 
 .shown {
-    display: block;
+    display: inline-block;
+    width: 100%;
+    height: 600px;
 }
