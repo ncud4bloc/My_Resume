@@ -16,6 +16,7 @@ body {
 #ncc, #nccA {
     font-size: 24px;
     height: auto;
+    clear: left;
 }
 
 #nccC {
@@ -88,6 +89,6 @@ body {
     margin-top: -150px;
 }
 
-#projPage, #goHome {
+#projPage, #goHome, #callMe {
     font-size: 18px;
 }
