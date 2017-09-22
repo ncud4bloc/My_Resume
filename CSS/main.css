@@ -258,14 +258,14 @@ img {
     height: 596px;
     height: auto;
     height: 686px;
-    background-image: url(../IMAGES/Myframe_snip.jpg);
+    background-image: url(../IMAGES/Myframe_snip2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 #frame2 {
-    background-image: url(../IMAGES/Diner_snip.jpg);
+    background-image: url(../IMAGES/Diner_snip2.jpg);
     background-size: contain;
 }
 
@@ -280,7 +280,7 @@ img {
 }
 
 #frame5 {
-    background-image: url(../IMAGES/Ttt_snip.jpg);
+    background-image: url(../IMAGES/Ttt_snip2.jpg);
     background-size: contain;
 }
 
@@ -289,7 +289,7 @@ img {
 }
 
 #frame7 {
-    background-image: url(../IMAGES/Minesweeper_snip.jpg);
+    background-image: url(../IMAGES/Minesweeper_snip2.jpg);
 }
 
 #arrows {
