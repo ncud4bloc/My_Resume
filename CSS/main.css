@@ -243,12 +243,12 @@ img {
     height: 690px;
     /*height: auto;*/
     border: 2px solid #000;
-    background-color: #fff;
-    background-color: #93a2a2;
-    /*background-image: url(../IMAGES/Myframe_snip.jpg);
+    /*background-color: #fff;
+    background-color: #93a2a2;*/
+    background-image: url(../IMAGES/Myframe_snip2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;*/
+    background-size: contain;
     padding-right: 0px;
     padding-left: 0px;
 }
