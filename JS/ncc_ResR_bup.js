@@ -34,13 +34,13 @@ var nextFrame = function(){
         $('#frame6').removeClass('notShown').addClass('shown');
     } else if ($('.shown').attr('id') == 'frame6'){
         $('#box1').css({
-            'background-image': 'url(IMAGES/Minesweeper_snip2.jpg)'    
+            'background-image': 'url(IMAGES/Snake_snip.jpg)'    
         });
         $('#frame6').removeClass('shown').addClass('notShown');
         $('#frame7').removeClass('notShown').addClass('shown');
     } else if ($('.shown').attr('id') == 'frame7'){
         $('#box1').css({
-            'background-image': 'url(IMAGES/MissileCommand_snip1.jpg)'    
+            'background-image': 'url(IMAGES/Minesweeper_snip2.jpg)'    
         });
         $('#frame7').removeClass('shown').addClass('notShown');
         $('#frame1').removeClass('notShown').addClass('shown');
@@ -60,13 +60,13 @@ var prevFrame = function(){
         $('#frame7').removeClass('notShown').addClass('shown');
     } else if ($('.shown').attr('id') == 'frame7'){
         $('#box1').css({
-            'background-image': 'url(IMAGES/MissileCommand_snip1.jpg)'    
+            'background-image': 'url(IMAGES/Minesweeper_snip2.jpg)'    
         });
         $('#frame7').removeClass('shown').addClass('notShown');
         $('#frame6').removeClass('notShown').addClass('shown');
     } else if ($('.shown').attr('id') == 'frame6'){
         $('#box1').css({
-            'background-image': 'url(IMAGES/Minesweeper_snip2.jpg)'    
+            'background-image': 'url(IMAGES/Snake_snip.jpg)'    
         });
         $('#frame6').removeClass('shown').addClass('notShown');
         $('#frame5').removeClass('notShown').addClass('shown');
