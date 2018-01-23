@@ -1,0 +1,61 @@
+#content, #contentTransparency {
+    height: 2550px;
+}
+
+#ncc, #nccA {
+    font-size: 36px;
+    padding-left: 40px;
+}
+
+#nccC {
+    height: auto;
+}
+
+#contactBox {
+    width: 135px;
+    height: 45px;
+    margin: 10px 50px 10px 50px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.goto {
+    width: 25px;
+    height: 25px;
+    margin: 9px 0 9px 6px;
+    border-radius: 8px;
+}
+
+#objective, #training, #priorInfo, #myContact {
+    font-size: 24px;
+    padding: 0 30px 0 40px;
+}
+
+#objective, #myContact {
+    margin-top: -15px;
+}
+
+#trngHdr, #projHdr, #prevHdr, #projHdrContainer, #nccC {
+    font-size: 36px;
+    padding: 0 30px 0 40px;
+}
+
+#projBox {
+   height: 490px;
+}
+
+#box1 {
+    height: 490px;
+}
+
+#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
+   height: 486px;
+}
+
+#arrows {
+    margin-top: -250px;
+}
+
+#projPage, #goHome, #callMe {
+    font-size: 28px;
+}

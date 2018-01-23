@@ -1,0 +1,332 @@
+body {
+    width: 100%;
+    min-width: 560px;
+    min-width: 320px;
+    background-color: #7b7b81;
+}
+
+#bdP2 {
+    min-width: 320px;
+}
+
+#content, #contentP2, #contentP3 {
+    width: 100%;
+    height: 1484px;
+    height: 1850px;
+    background-image: url(../IMAGES/issa3C.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    border: 3px ridge #548ec6;
+}
+
+#contentP2 {
+    height: 4400px;
+    background-image: url(../IMAGES/atk1.jpg);
+}
+
+#contentP3 {
+    background-image: url(../IMAGES/issa1.jpg);
+}
+
+#contentTransparency, #contentTransparencyP2, #contentTransparencyP3 {
+    position:absolute;
+    width: 100%;
+    height: 1484px;
+    height: 1850px;
+    background-color: #fff;
+    opacity: 0.65;
+}
+
+#contentTransparencyP2 {
+    height: 4400px;
+}
+
+#ncc, #nccC, #nccA {
+    margin-top: 14px;
+    padding-left: 100px;
+    height: 50px;
+    text-align: left;
+    text-decoration: underline;
+    font-family: "Poiret One", cursive;
+    color: #000;
+    font-size: 36px;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#nccC {
+    height: auto;
+}
+
+#contactBox {
+    float: right;
+    width: 215px;
+    height: 60px;
+    margin: 5px 50px 10px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.goto {
+    position: relative;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 9px 0 9px 10px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    background-size: cover;
+}
+
+#gotoPH {
+    background-image: url(../IMAGES/phone-icon.png);
+}
+
+#gotoPH2 {
+    background-image: url(../IMAGES/phone-icon.png);
+}
+
+#gotoLI {
+    background-image: url(../IMAGES/li_gray_icon.png);
+}
+
+#gotoTW {
+    background-image: url(../IMAGES/tw_gray_icon.png);
+}
+
+#gotoGH {
+    background-image: url(../IMAGES/gh_gray_icon.jpg);
+}
+
+#gotoEM {
+    background-image: url(../IMAGES/icon_emailC.png);
+}
+
+#trngHdr, #projHdr, #prevHdr {
+    font-family: "Poiret One", cursive;
+    text-decoration: underline;
+    color: #000;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 0 30px 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#trngHdr {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 85px;
+}
+
+#projHdr {
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#projHdrContainer, #projHdrTxt {
+    height: auto;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: #000;
+    font-size: 24px;
+    padding: 0 30px 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#prevHdr {
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#objective, #training, #priorInfo, #myContact {
+    text-align: left;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: #c41c1c;
+    color: #000;
+    font-size: 24px;
+    padding: 0 30px 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#objective, #myContact {
+    height: auto;
+    margin-top: -15px;
+}
+
+#training {
+    height: auto;
+    margin-top: 15px;
+}
+
+#priorInfo {
+    height: auto;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.projName, .projName2 {
+    height: auto;
+    text-align: left;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: #000;
+    font-size: 28px;
+    padding: 0 30px 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.projName2 {
+    padding: 0 30px 0 30px; 
+}
+
+.projDesc {
+    height: auto;
+    text-align: left;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: #000;
+    font-size: 18px;
+    padding: 0 30px 0 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.gap {
+    visibility: hidden;
+}
+
+#goHome, #callMe, #projPage {
+    height: 25px;
+    text-align: center;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: #000;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0 auto 0 auto;
+    padding-top: 20px;
+}
+
+.up1 {
+    height: auto;
+    margin-top: -65px;
+}
+
+.up2 {
+    height: auto;
+    margin-top: -10px;
+}
+
+#training {
+    margin-top: 0;
+}
+
+#projBox {
+    /*height: auto;*/
+    height: 690px;
+    margin-top: 25px;
+    padding-right: 0px;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    height: 100% !important;
+}
+
+#box1 {
+    height: 690px;
+    /*height: auto;*/
+    border: 2px solid #000;
+    /*background-color: #fff;
+    background-color: #93a2a2;*/
+    background-image: url(../IMAGES/Myframe_snip2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
+    /*width: auto;*/
+    height: 596px;
+    height: auto;
+    height: 686px;
+    background-image: url(../IMAGES/Myframe_snip2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#frame2 {
+    background-image: url(../IMAGES/Diner_snip2.jpg);
+    background-size: contain;
+}
+
+#frame3 {
+    background-image: url(../IMAGES/Newsweek_snip.jpg);
+    background-size: contain;
+}
+
+#frame4 {
+    background-image: url(../IMAGES/Calculator_snip.jpg);
+    background-size: contain;
+}
+
+#frame5 {
+    background-image: url(../IMAGES/Ttt_snip2.jpg);
+    background-size: contain;
+}
+
+#frame6 {
+    background-image: url(../IMAGES/Minesweeper_snip2.jpg);
+}
+
+#frame7 {
+    background-image: url(../IMAGES/MissileCommand_snip1.jpg);
+}
+
+#arrows {
+    height: 30px;
+    margin-top: -350px;
+    background: none;
+    z-index: 10;
+}
+
+.arrowLR {
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: #fff;
+    background-size: cover;
+    border: 3px ridge #4d3d3d;
+    cursor: pointer;
+}
+
+#lftArrow {
+    margin-left: 10px;
+    background-image: url(../IMAGES/lftArrow.png);
+    float: left;
+}
+
+#rtArrow {
+    margin-right: 10px;
+    background-image: url(../IMAGES/rtArrow.png);
+    float: right;
+}
+
+.notShown {
+    display: none;
+}
+
+.shown {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+}

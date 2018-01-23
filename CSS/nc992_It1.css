@@ -1,0 +1,65 @@
+#ncc, #nccA {
+    font-size: 36px;
+    padding-left: 40px;
+}
+
+#nccC {
+    height: auto;
+}
+
+#contentP2, #contentTransparencyP2 {
+    height: 4200px;
+}
+
+#contactBox {
+    width: 167px;
+    height: 50px;
+    margin: 10px 50px 10px 50px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.goto {
+    width: 30px;
+    height: 30px;
+    margin: 9px 0 9px 8px;
+    border-radius: 8px;
+}
+
+#objective, #training, #priorInfo, #myContact {
+    padding: 0 30px 0 40px;
+}
+
+#trngHdr, #projHdr, #prevHdr, #projHdrContainer, #nccC {
+    font-size: 36px;
+    padding: 0 30px 0 40px;
+}
+
+#projHdr, #projHdrTxt {
+    padding: 0 30px 0 40px;
+}
+
+.projName, .projDesc {
+    padding: 0 30px 0 40px;
+}
+
+.projName2 {
+    padding: 0 30px 0 30px;
+}
+
+#projBox {
+    height: 590px;
+}
+
+#box1 {
+    height: 590px;
+}
+
+#frame1, #frame2, #frame3, #frame4, #frame5, #frame6, #frame7 {
+    height: 586px;
+}
+
+#arrows {
+    margin-top: -300px;
+    z-index: 10;
+}
