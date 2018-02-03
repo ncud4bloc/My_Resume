@@ -7,6 +7,19 @@
     padding-left: 10px;
 }
 
+#box3, #box4, #box5 {
+    border-right: 2px solid #ddd;
+}
+
+#box4, #box5, #box6 {
+    border-left: 2px solid #ddd;
+}
+
 #box13 {
-    margin-top: 70px;
+    margin-top: 40px;
+}
+
+#box20 {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
 }
