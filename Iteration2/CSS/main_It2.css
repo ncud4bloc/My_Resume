@@ -28,7 +28,14 @@ body {
 
 #box2 {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 3px;
+}
+
+#myPhoto, #myLI, #myGH {
+    height: 56px;
+    border: 2px solid #f00;
+    border-radius: 30px;
+    margin-top: -20px;
 }
 
 #box2, #box3, #box4, #box5, #box6 {
