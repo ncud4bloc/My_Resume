@@ -22,7 +22,7 @@ body {
 }
 
 #box1 {
-    height: 60px;
+    height: 120px;
     background-color: #04181c;
 }
 
@@ -45,4 +45,54 @@ body {
 
 #box7 {
     border-bottom: 2px solid #ddd;
+}
+
+#box13 {
+    height: 480px;
+    background-color: #04181c;
+    margin-top: 40px;
+}
+
+.projBox {
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    color: #e36a12;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 110px;
+    background-color: #557c33;
+}
+
+#box14, #box15, #box16 {
+    height: 240px;
+    border-top: 2px solid #ddd;
+}
+
+#box17, #box18, #box19 {
+    height: 240px;
+    border-bottom: 2px solid #ddd;
+}
+
+#box14, #box17 {
+    border-left: 2px solid #ddd;
+}
+
+#box15, #box16, #box18, #box19 {
+    float: left;
+}
+
+#box16, #box19 {
+    clear: right;
+    border-right: 2px solid #ddd;
+}
+
+.ftrBox {
+    height: 25px;
+    font-family: "Poiret One", cursive;
+    font-size: 12px;
+    /*font-family: 'Encode Sans Semi Condensed', sans-serif;*/
+    color: #e36a12;
+    /*border: 1px solid #ddd;*/
+    text-align: center;
+    padding-top: 5px;
+    background-color: #04181c;
 }
