@@ -18,3 +18,16 @@
 #box13 {
     margin-top: 40px;
 }
+
+#box14, #box17 {
+    border-left: 0px solid #04181c; /*#ddd;*/
+}
+
+#box16, #box18 {
+    clear: left;
+}
+
+.projBox {
+    width: 50%;
+    /*width: auto;*/
+}
