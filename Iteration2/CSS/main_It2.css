@@ -27,16 +27,29 @@ body {
 
 #box2 {
     text-align: left;
-    padding-left: 3px;
+    padding-left: 0px;
+}
+
+.hdrImages {
+    height: 100%;
+    width: 54px;
+}
+
+.hdrImages2 {
+    height: 60%;
+    float: right;
+    margin-top: 12px;
 }
 
 #myPhoto, #myLI, #myGH {
-    height: 54px;
-    /*border: 2px solid #f00;*/
-    border-radius: 30px;
-    margin-top: -18px;
+    /*height: 54px;
+    border: 2px solid #f00;
+    border-radius: 30px;*/
+    background-color: #04181c;
+    margin-top: -21px;
 }
 
+/*
 #myPhoto {
     background-image: url(../IMAGES/ncc.jpeg);
     background-repeat: no-repeat;
@@ -44,12 +57,12 @@ body {
     background-size: cover;
 }
 
+
 #myLI {
     background-image: url(../IMAGES/Linkedin.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
 
 #myGH {
     background-image: url(../IMAGES/Octocat.jpg);
@@ -57,6 +70,7 @@ body {
     background-position: center;
     background-size: cover;
 }
+*/
 
 #box2, #box3, #box4, #box5, #box6 {
     border-top: 2px solid #ddd;
@@ -71,41 +85,57 @@ body {
 }
 
 #box7 {
+    height: auto;
     border-bottom: 2px solid #ddd;
+    padding-top: 0px;
+    text-align: left;
 }
+
+@media (max-width: 473px) {  
+  #box13 {
+    margin-top: 80px !important;
+    }
+} 
 
 #box13 {
     height: 480px;
     height: auto;
     background-color: #04181c;
-    margin-top: 40px;
+    background-color: #737e80;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    border-top: 5px solid #737e80;
 }
 
 .projBox {
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     color: #e36a12;
-    border: 1px solid #04181c; /*#ddd;*/
-    border-radius: 10px;
+    /*border: 1px solid #737e80;*/ /*#ddd;*/
+    /*border-radius: 10px;*/
     text-align: center;
     /*padding-top: 110px;*/
     background-color: #557c33;
     background-color: #04181c;
+    background-color: #737e80;
 }
 
 #box14, #box15, #box16 {
     height: 240px;
     height: auto;
     border-top: 2px solid #04181c; /*#ddd;*/
+    border-top: 2px solid #737e80;
 }
 
 #box17, #box18, #box19 {
     height: 240px;
     height: auto;
     border-bottom: 2px #04181c; /*#ddd;*/
+    border-bottom: 2px solid #737e80;
 }
 
 #box14, #box17 {
     border-left: 2px solid #04181c; /*#ddd;*/
+    border-left: 2px solid #737e80;
 }
 
 #box15, #box16, #box18, #box19 {
@@ -114,45 +144,8 @@ body {
 
 #box16, #box19 {
     clear: right;
-    /*border-right: 2px solid #04181c;*/ /*#ddd;*/
+    /*border-right: 2px solid #04181c;*/
 }
-
-/*
-#box15 {
-    background-image: url(../IMAGES/Myframe_snip2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#box16 {
-    background-image: url(../IMAGES/Diner_snip2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#box17 {
-    background-image: url(../IMAGES/Image_snip.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#box18 {
-    background-image: url(../IMAGES/GoogleMap_snip.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#box19 {
-    background-image: url(../IMAGES/MissileCommand_snip1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-*/
 
 .projImages {
     width: 100%;

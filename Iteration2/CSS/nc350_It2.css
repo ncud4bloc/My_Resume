@@ -20,7 +20,7 @@
 }
 
 #box14, #box17 {
-    border-left: 0px solid #04181c; /*#ddd;*/
+    border-left: 0px solid #04181c; 
 }
 
 #box16, #box18 {
@@ -29,5 +29,4 @@
 
 .projBox {
     width: 50%;
-    /*width: auto;*/
 }
