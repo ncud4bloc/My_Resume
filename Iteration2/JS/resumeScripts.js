@@ -3,7 +3,16 @@
 
 var showInfo = function(){
     $(this).removeClass('inActive').addClass('active');
-    if($('.active').attr('id') == 'box14'){
+    if($('.active').attr('id') == 'box4'){
+        console.log("box4 active");
+        $('#box4').removeClass('active').addClass('inActive');
+    } else if ($('.active').attr('id') == 'box5'){
+        console.log("box5 active");
+        $('#box5').removeClass('active').addClass('inActive');
+    } else if ($('.active').attr('id') == 'box6'){
+        console.log("box6 active");
+        $('#box6').removeClass('active').addClass('inActive');
+    } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 active");
         $('#box14').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box15'){
@@ -26,7 +35,16 @@ var showInfo = function(){
 
 var unShowInfo = function(){
     $(this).removeClass('inActive').addClass('active');
-    if($('.active').attr('id') == 'box14'){
+    if($('.active').attr('id') == 'box4'){
+        console.log("box4 inactive");
+        $('#box4').removeClass('active').addClass('inActive');
+    } else if ($('.active').attr('id') == 'box5'){
+        console.log("box5 inactive");
+        $('#box5').removeClass('active').addClass('inActive');
+    } else if ($('.active').attr('id') == 'box6'){
+        console.log("box6 inactive");
+        $('#box6').removeClass('active').addClass('inActive');
+    } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 inactive");
         $('#box14').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box15'){
@@ -48,11 +66,16 @@ var unShowInfo = function(){
 };
 
 
+
 /* -----  Function Calls  ----- */
 
 $(function(){
     
     //$('.projBox').hover(showInfo,unShowInfo);
+    
+    $('#box4').hover(showInfo,unShowInfo);
+    $('#box5').hover(showInfo,unShowInfo);
+    $('#box6').hover(showInfo,unShowInfo);
     
     $('#box14').hover(showInfo,unShowInfo);
     $('#box15').hover(showInfo,unShowInfo);
