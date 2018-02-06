@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    min-width: 350px;
+    min-width: 420px;
     background-color: #7b7b81;
 }
 
@@ -31,22 +31,33 @@ body {
 }
 
 .hdrImages {
-    height: 100%;
-    width: 54px;
+    height: 57px;
+    width: 57px;
+    border-radius: 29px;
 }
 
-.hdrImages2 {
-    height: 60%;
+.hdrImages2, .hdrImages3 {
+    height: 50%;
     float: right;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 #myPhoto, #myLI, #myGH {
-    /*height: 54px;
-    border: 2px solid #f00;
+    height: 54px;
+    /*border: 2px solid #f00;
     border-radius: 30px;*/
     background-color: #04181c;
-    margin-top: -21px;
+    margin-top: -20px;
+}
+
+#myLI {
+    width: 14px;
+    margin-left: 40px;
+}
+
+#myGH {
+    width: 14px;
+    margin-left: 20px;
 }
 
 /*
@@ -88,12 +99,35 @@ body {
     height: auto;
     border-bottom: 2px solid #ddd;
     padding-top: 0px;
+    padding-left: 10px;
     text-align: left;
+}
+
+@media (max-width: 892px) {  
+  #box13 {
+    margin-top: 50px !important;
+  }
+}
+
+@media (max-width: 768px) {  
+  .hdrImages2, .hdrImages3 {
+    /*height: 40%;*/
+    float: right;
+    margin-top: 17px;
+  }
+  #myLI {
+    width: 14px;
+    margin-left: 35px;
+  }
+  #myGH {
+    width: 14px;
+    /*margin-left: 10px;*/
+  }
 }
 
 @media (max-width: 473px) {  
   #box13 {
-    margin-top: 80px !important;
+    margin-top: 70px !important;
     }
 } 
 
