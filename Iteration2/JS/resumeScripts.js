@@ -51,13 +51,9 @@ var showInfo = function(){
         $box16.append($b15Link2);
         $box16.append($b15Desc);
         
-        /*$tabs.css({
-            'position': 'fixed',
-            'width': '100%',
-            'height': '50px',
-            'left': '220px',
-            'top': '225px'
-        });*/
+        $('.dataPage').css({
+            'display': 'block'
+        });
         $('#box15').removeClass('active').addClass('inActive');
         
     } else if ($('.active').attr('id') == 'box16'){
@@ -89,9 +85,16 @@ var unShowInfo = function(){
     } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 inactive");
         $('#box14').removeClass('active').addClass('inActive');
+        
+        
     } else if ($('.active').attr('id') == 'box15'){
         console.log("box15 inactive");
+        $('.dataPage').css({
+            'display': 'none'
+        });
         $('#box15').removeClass('active').addClass('inActive');
+        
+        
     } else if ($('.active').attr('id') == 'box16'){
         console.log("box16 inactive");
         $('#box16').removeClass('active').addClass('inActive');
