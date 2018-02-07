@@ -89,9 +89,11 @@ var unShowInfo = function(){
         
     } else if ($('.active').attr('id') == 'box15'){
         console.log("box15 inactive");
+        /*
         $('.dataPage').css({
             'display': 'none'
         });
+        */
         $('#box15').removeClass('active').addClass('inActive');
         
         
