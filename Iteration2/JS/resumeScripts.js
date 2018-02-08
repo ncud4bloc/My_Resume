@@ -11,8 +11,10 @@ var $box17 = $('#box17');
 var $box18 = $('#box18');
 var $box19 = $('#box19');
 
+
 //var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p>Ruby Hangman:</p></div>');
 
+var $b15Slide = $('<div id="b15Slide"></div>')
 var $b15Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b15Title"><p>P51 Motorcycle:</p></div>');
 var $b15Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b15Link1"><p><a href="https://github.com/ncud4bloc/My_Frame/" target="_blank">Source Code</a></p></div>');
 var $b15Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b15Link2"><p><a href="https://ncud4bloc.github.io/My_Frame/HTML/index.html" target="_blank">View in Browser</a></p></div>');
@@ -32,84 +34,70 @@ var showInfo = function(){
     $(this).removeClass('inActive').addClass('active');
     if($('.active').attr('id') == 'box4'){
         console.log("box4 active");
-        $('#box4').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box5'){
         console.log("box5 active");
-        $('#box5').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box6'){
         console.log("box6 active");
-        $('#box6').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 active");
-        $('#box14').removeClass('active').addClass('inActive');
         
         
     } else if ($('.active').attr('id') == 'box15'){
         console.log("box15 active");
-        $box16.append($b15Title);
-        $box16.append($b15Link1);
-        $box16.append($b15Link2);
-        $box16.append($b15Desc);
+        $box16.append($b15Slide);
+            $b15Slide.append($b15Title);
+            $b15Slide.append($b15Link1);
+            $b15Slide.append($b15Link2);
+            $b15Slide.append($b15Desc);
         
         $('.dataPage').css({
             'display': 'block'
         });
-        $('#box15').removeClass('active').addClass('inActive');
+        $b15Slide.slideUp(0);
+        $b15Slide.slideDown(800);
         
     } else if ($('.active').attr('id') == 'box16'){
         console.log("box16 active");
-        $('#box16').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box17'){
         console.log("box17 active");
-        $('#box17').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box18'){
         console.log("box18 active");
-        $('#box18').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box19'){
         console.log("box19 active");
-        $('#box19').removeClass('active').addClass('inActive');
     }
 };
 
 var unShowInfo = function(){
-    $(this).removeClass('inActive').addClass('active');
     if($('.active').attr('id') == 'box4'){
         console.log("box4 inactive");
-        $('#box4').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box5'){
         console.log("box5 inactive");
-        $('#box5').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box6'){
         console.log("box6 inactive");
-        $('#box6').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 inactive");
-        $('#box14').removeClass('active').addClass('inActive');
         
         
     } else if ($('.active').attr('id') == 'box15'){
         console.log("box15 inactive");
+        
+        $b15Slide.slideUp(500);
         /*
         $('.dataPage').css({
             'display': 'none'
         });
         */
-        $('#box15').removeClass('active').addClass('inActive');
-        
         
     } else if ($('.active').attr('id') == 'box16'){
         console.log("box16 inactive");
-        $('#box16').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box17'){
         console.log("box17 inactive");
-        $('#box17').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box18'){
         console.log("box18 inactive");
-        $('#box18').removeClass('active').addClass('inActive');
     } else if ($('.active').attr('id') == 'box19'){
         console.log("box19 inactive");
-        $('#box19').removeClass('active').addClass('inActive');
     }
+    $(this).removeClass('active').addClass('inActive'); //NCC
 };
 
 
