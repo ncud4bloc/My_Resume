@@ -15,6 +15,10 @@ var $box14t16 = $('#box14t16');
 
 
 //var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p>Ruby Hangman:</p></div>');
+var $b14Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Slide"></div>')
+var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p>Ruby Hangman:</p></div>');
+var $b14Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b14Link1"><p><a href="https://github.com/ncud4bloc/Hangman/" target="_blank">Source Code</a></p></div>');
+var $b14Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Desc"><p>Hangman using command line inputs and displaying the stick-figure and letter guess status. Accesses external dictionary file and includes game-save functionality.</p></div>');
 
 var $b15Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b15Slide"></div>')
 var $b15Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b15Title"><p>P51 Motorcycle:</p></div>');
@@ -40,8 +44,18 @@ var showInfo = function(){
         console.log("box5 active");
     } else if ($('.active').attr('id') == 'box6'){
         console.log("box6 active");
+        
     } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 active");
+        $box14t16.append($b14Slide);
+            $b14Slide.append($b14Title);
+            $b14Slide.append($b14Link1);
+            $b14Slide.append($b14Desc);
+        $('.dataPage').css({
+            'display': 'block'
+        });
+        $b14Slide.slideUp(0);
+        $b14Slide.slideDown(800);
         
         
     } else if ($('.active').attr('id') == 'box15'){
@@ -51,11 +65,9 @@ var showInfo = function(){
             $b15Slide.append($b15Link1);
             $b15Slide.append($b15Link2);
             $b15Slide.append($b15Desc);
-        
         $('.dataPage').css({
             'display': 'block'
         });
-        
         $b15Slide.slideUp(0);
         $b15Slide.slideDown(800);
         
@@ -77,8 +89,10 @@ var unShowInfo = function(){
         console.log("box5 inactive");
     } else if ($('.active').attr('id') == 'box6'){
         console.log("box6 inactive");
+        
     } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 inactive");
+        $b14Slide.slideUp(500);
         
         
     } else if ($('.active').attr('id') == 'box15'){
