@@ -51,7 +51,7 @@ var showInfo = function(){
             $b14Slide.append($b14Title);
             $b14Slide.append($b14Link1);
             $b14Slide.append($b14Desc);
-        $('.dataPage').css({
+        $b14Slide.css({
             'display': 'block'
         });
         $b14Slide.slideUp(0);
@@ -65,9 +65,15 @@ var showInfo = function(){
             $b15Slide.append($b15Link1);
             $b15Slide.append($b15Link2);
             $b15Slide.append($b15Desc);
+        /*
         $('.dataPage').css({
             'display': 'block'
         });
+        */
+        $b15Slide.css({
+            'display': 'block'
+        });
+        
         $b15Slide.slideUp(0);
         $b15Slide.slideDown(800);
         
@@ -92,18 +98,27 @@ var unShowInfo = function(){
         
     } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 inactive");
-        $b14Slide.slideUp(500);
+        $b14Slide.slideUp(0);
+        
+        $b14Slide.css({
+            'display': 'none'
+        });
         
         
     } else if ($('.active').attr('id') == 'box15'){
         console.log("box15 inactive");
         
-        $b15Slide.slideUp(500);
+        $b15Slide.slideUp(0);
+        
         /*
         $('.dataPage').css({
             'display': 'none'
         });
         */
+        $b15Slide.css({
+            'display': 'none'
+        });
+        
         
     } else if ($('.active').attr('id') == 'box16'){
         console.log("box16 inactive");
