@@ -11,10 +11,12 @@ var $box17 = $('#box17');
 var $box18 = $('#box18');
 var $box19 = $('#box19');
 
+var $box14t16 = $('#box14t16');
+
 
 //var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p>Ruby Hangman:</p></div>');
 
-var $b15Slide = $('<div id="b15Slide"></div>')
+var $b15Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b15Slide"></div>')
 var $b15Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b15Title"><p>P51 Motorcycle:</p></div>');
 var $b15Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b15Link1"><p><a href="https://github.com/ncud4bloc/My_Frame/" target="_blank">Source Code</a></p></div>');
 var $b15Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b15Link2"><p><a href="https://ncud4bloc.github.io/My_Frame/HTML/index.html" target="_blank">View in Browser</a></p></div>');
@@ -44,7 +46,7 @@ var showInfo = function(){
         
     } else if ($('.active').attr('id') == 'box15'){
         console.log("box15 active");
-        $box16.append($b15Slide);
+        $box14t16.append($b15Slide);
             $b15Slide.append($b15Title);
             $b15Slide.append($b15Link1);
             $b15Slide.append($b15Link2);
@@ -53,6 +55,7 @@ var showInfo = function(){
         $('.dataPage').css({
             'display': 'block'
         });
+        
         $b15Slide.slideUp(0);
         $b15Slide.slideDown(800);
         

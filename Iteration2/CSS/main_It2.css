@@ -142,6 +142,8 @@ body {
 }
 
 .projBox {
+    position: relative;
+    z-index: 1;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     color: #e36a12;
     /*border: 1px solid #737e80;*/ /*#ddd;*/
@@ -151,6 +153,11 @@ body {
     background-color: #557c33;
     background-color: #04181c;
     background-color: #737e80;
+}
+
+#box14t16 {
+    width: 100%;
+    height: auto;
 }
 
 #box14, #box15, #box16 {
