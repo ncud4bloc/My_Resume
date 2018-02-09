@@ -167,6 +167,11 @@ body {
     border-top: 2px solid #737e80;
 }
 
+#box17t19 {
+    width: 100%;
+    height: auto;
+}
+
 #box17, #box18, #box19 {
     height: 240px;
     height: auto;
@@ -201,7 +206,7 @@ body {
     padding-left: 10px;
 }
 
-#b14Title, #b15Title {
+#b14Title, #b15Title, #b16Title, #b17Title, #b18Title, #b19Title, {
     font-size: 20px;
 }
 
