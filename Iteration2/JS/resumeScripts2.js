@@ -184,6 +184,14 @@ var showInfo = function(){
     }
 };
 
+var switchToData = function(){
+    console.log("Going to dataBox");
+};
+
+var inDataBox = function(){
+    console.log("In the slidedown dataBox");
+};
+
 var unShowInfo = function(){
     if($('.active').attr('id') == 'box4'){
         console.log("box4 inactive");
@@ -192,42 +200,42 @@ var unShowInfo = function(){
     } else if ($('.active').attr('id') == 'box6'){
         console.log("box6 inactive");
         
-    } else if (($('.active').attr('id') == 'box14') && (dataBoxes.box14Slide === 'on')){
+    } else if (dataBoxes.box14Slide === 'off'){
         console.log("box14 inactive");
         $b14Slide.slideUp(0);
         $b14Slide.css({
             'display': 'none'
         });
         
-    } else if (($('.active').attr('id') == 'box15') && (dataBoxes.box15Slide === 'on')){
+    } else if (dataBoxes.box15Slide === 'off'){
         console.log("box15 inactive");
         $b15Slide.slideUp(0);
         $b15Slide.css({
             'display': 'none'
         });
          
-    } else if (($('.active').attr('id') == 'box16') && (dataBoxes.box16Slide === 'on')){
+    } else if (dataBoxes.box16Slide === 'off'){
         console.log("box16 inactive");
         $b16Slide.slideUp(0);
         $b16Slide.css({
             'display': 'none'
         });
         
-    } else if (($('.active').attr('id') == 'box17') && (dataBoxes.box17Slide === 'on')){
+    } else if (dataBoxes.box17Slide === 'off'){
         console.log("box17 inactive");
         $b17Slide.slideUp(0);
         $b17Slide.css({
             'display': 'none'
         });
         
-    } else if (($('.active').attr('id') == 'box18') && (dataBoxes.box18Slide === 'on')){
+    } else if (dataBoxes.box18Slide === 'off'){
         console.log("box18 inactive");
         $b18Slide.slideUp(0);
         $b18Slide.css({
             'display': 'none'
         });
         
-    } else if (($('.active').attr('id') == 'box19') && (dataBoxes.box19Slide === 'on')){
+    } else if (dataBoxes.box19Slide === 'off'){
         console.log("box19 inactive");
         $b19Slide.slideUp(0);
         $b19Slide.css({
@@ -247,11 +255,18 @@ $(function(){
     $('#box5').hover(showInfo,unShowInfo);
     $('#box6').hover(showInfo,unShowInfo);
     
-    $('#box14').hover(showInfo,unShowInfo);
-    $('#box15').hover(showInfo,unShowInfo);
-    $('#box16').hover(showInfo,unShowInfo);
-    $('#box17').hover(showInfo,unShowInfo);
-    $('#box18').hover(showInfo,unShowInfo);
-    $('#box19').hover(showInfo,unShowInfo);
+    $('#box14').hover(showInfo,switchToData);
+    $('#box15').hover(showInfo,switchToData);
+    $('#box16').hover(showInfo,switchToData);
+    $('#box17').hover(showInfo,switchToData);
+    $('#box18').hover(showInfo,switchToData);
+    $('#box19').hover(showInfo,switchToData);
+    
+    $b14Slide.hover(inDataBox,unShowInfo);
+    $b15Slide.hover(inDataBox,unShowInfo);
+    $b16Slide.hover(inDataBox,unShowInfo);
+    $b17Slide.hover(inDataBox,unShowInfo);
+    $b18Slide.hover(inDataBox,unShowInfo);
+    $b19Slide.hover(inDataBox,unShowInfo);
     
 });
