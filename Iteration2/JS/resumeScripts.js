@@ -79,14 +79,38 @@ var showInfo = function(){
         
     } else if ($('.active').attr('id') == 'box14'){
         console.log("box14 active");
-        dataBoxes.box14Slide == 'on'
-        dataBoxes.box15Slide == 'off'
-        dataBoxes.box17Slide == 'off'
-        dataBoxes.box18Slide == 'off'
+        dataBoxes.box14Slide == 'on';
+        dataBoxes.box15Slide == 'off';
+        dataBoxes.box16Slide == 'off';
+        dataBoxes.box17Slide == 'off';
+        dataBoxes.box18Slide == 'off';
+        dataBoxes.box18Slide == 'off';
         $box14t16.append($b14Slide);
             $b14Slide.append($b14Title);
             $b14Slide.append($b14Link1);
             $b14Slide.append($b14Desc);
+        
+        $b15Slide.slideUp(0);
+        $b15Slide.css({
+            'display': 'none'
+        });
+        $b16Slide.slideUp(0);
+        $b16Slide.css({
+            'display': 'none'
+        });
+        $b17Slide.slideUp(0);
+        $b17Slide.css({
+            'display': 'none'
+        });
+        $b18Slide.slideUp(0);
+        $b18Slide.css({
+            'display': 'none'
+        });
+        $b19Slide.slideUp(0);
+        $b19Slide.css({
+            'display': 'none'
+        });
+        
         $b14Slide.css({
             'display': 'block'
         });
@@ -96,16 +120,38 @@ var showInfo = function(){
     } else if ($('.active').attr('id') == 'box15'){
         console.log("box15 active");
         dataBoxes.box15Slide = 'on';
-        dataBoxes.box14Slide == 'off'
-        dataBoxes.box16Slide == 'off'
-        dataBoxes.box17Slide == 'off'
-        dataBoxes.box18Slide == 'off'
-        dataBoxes.box19Slide == 'off'
+        dataBoxes.box14Slide == 'off';
+        dataBoxes.box16Slide == 'off';
+        dataBoxes.box17Slide == 'off';
+        dataBoxes.box18Slide == 'off';
+        dataBoxes.box19Slide == 'off';
         $box14t16.append($b15Slide);
             $b15Slide.append($b15Title);
             $b15Slide.append($b15Link1);
             $b15Slide.append($b15Link2);
             $b15Slide.append($b15Desc);
+        
+        $b14Slide.slideUp(0);
+        $b14Slide.css({
+            'display': 'none'
+        });
+        $b16Slide.slideUp(0);
+        $b16Slide.css({
+            'display': 'none'
+        });
+        $b17Slide.slideUp(0);
+        $b17Slide.css({
+            'display': 'none'
+        });
+        $b18Slide.slideUp(0);
+        $b18Slide.css({
+            'display': 'none'
+        });
+        $b19Slide.slideUp(0);
+        $b19Slide.css({
+            'display': 'none'
+        });
+        
         $b15Slide.css({
             'display': 'block'
         });
@@ -115,14 +161,38 @@ var showInfo = function(){
     } else if ($('.active').attr('id') == 'box16'){
         console.log("box16 active");
         dataBoxes.box16Slide = 'on';
-        dataBoxes.box15Slide == 'off'
-        dataBoxes.box18Slide == 'off'
-        dataBoxes.box19Slide == 'off'
+        dataBoxes.box14Slide == 'off';
+        dataBoxes.box15Slide == 'off';
+        dataBoxes.box17Slide == 'off';
+        dataBoxes.box18Slide == 'off';
+        dataBoxes.box19Slide == 'off';
         $box14t16.append($b16Slide);
             $b16Slide.append($b16Title);
             $b16Slide.append($b16Link1);
             $b16Slide.append($b16Link2);
             $b16Slide.append($b16Desc);
+        
+        $b14Slide.slideUp(0);
+        $b14Slide.css({
+            'display': 'none'
+        });
+        $b15Slide.slideUp(0);
+        $b15Slide.css({
+            'display': 'none'
+        });
+        $b17Slide.slideUp(0);
+        $b17Slide.css({
+            'display': 'none'
+        });
+        $b18Slide.slideUp(0);
+        $b18Slide.css({
+            'display': 'none'
+        });
+        $b19Slide.slideUp(0);
+        $b19Slide.css({
+            'display': 'none'
+        });
+        
         $b16Slide.css({
             'display': 'block'
         });
@@ -132,14 +202,38 @@ var showInfo = function(){
     } else if ($('.active').attr('id') == 'box17'){
         console.log("box17 active");
         dataBoxes.box17Slide = 'on';
-        dataBoxes.box14Slide == 'off'
-        dataBoxes.box15Slide == 'off'
-        dataBoxes.box18Slide == 'off'
+        dataBoxes.box14Slide == 'off';
+        dataBoxes.box15Slide == 'off';
+        dataBoxes.box16Slide == 'off';
+        dataBoxes.box18Slide == 'off';
+        dataBoxes.box19Slide == 'off';
         $box17t19.append($b17Slide);
             $b17Slide.append($b17Title);
             $b17Slide.append($b17Link1);
             $b17Slide.append($b17Link2);
             $b17Slide.append($b17Desc);
+        
+        $b14Slide.slideUp(0);
+        $b14Slide.css({
+            'display': 'none'
+        });
+        $b15Slide.slideUp(0);
+        $b15Slide.css({
+            'display': 'none'
+        });
+        $b16Slide.slideUp(0);
+        $b16Slide.css({
+            'display': 'none'
+        });
+        $b18Slide.slideUp(0);
+        $b18Slide.css({
+            'display': 'none'
+        });
+        $b19Slide.slideUp(0);
+        $b19Slide.css({
+            'display': 'none'
+        });
+        
         $b17Slide.css({
             'display': 'block'
         });
@@ -149,16 +243,38 @@ var showInfo = function(){
     } else if ($('.active').attr('id') == 'box18'){
         console.log("box18 active");
         dataBoxes.box18Slide = 'on';
-        dataBoxes.box14Slide == 'off'
-        dataBoxes.box15Slide == 'off'
-        dataBoxes.box16Slide == 'off'
-        dataBoxes.box17Slide == 'off'
-        dataBoxes.box19Slide == 'off'
+        dataBoxes.box14Slide == 'off';
+        dataBoxes.box15Slide == 'off';
+        dataBoxes.box16Slide == 'off';
+        dataBoxes.box17Slide == 'off';
+        dataBoxes.box19Slide == 'off';
         $box17t19.append($b18Slide);
             $b18Slide.append($b18Title);
             $b18Slide.append($b18Link1);
             $b18Slide.append($b18Link2);
             $b18Slide.append($b18Desc);
+        
+        $b14Slide.slideUp(0);
+        $b14Slide.css({
+            'display': 'none'
+        });
+        $b15Slide.slideUp(0);
+        $b15Slide.css({
+            'display': 'none'
+        });
+        $b16Slide.slideUp(0);
+        $b16Slide.css({
+            'display': 'none'
+        });
+        $b17Slide.slideUp(0);
+        $b17Slide.css({
+            'display': 'none'
+        });
+        $b19Slide.slideUp(0);
+        $b19Slide.css({
+            'display': 'none'
+        });
+        
         $b18Slide.css({
             'display': 'block'
         });
@@ -168,14 +284,38 @@ var showInfo = function(){
     } else if ($('.active').attr('id') == 'box19'){
         console.log("box19 active");
         dataBoxes.box19Slide = 'on';
-        dataBoxes.box15Slide == 'off'
-        dataBoxes.box16Slide == 'off'
-        dataBoxes.box18Slide == 'off'
+        dataBoxes.box14Slide == 'off';
+        dataBoxes.box15Slide == 'off';
+        dataBoxes.box16Slide == 'off';
+        dataBoxes.box17Slide == 'off';
+        dataBoxes.box18Slide == 'off';
         $box17t19.append($b19Slide);
             $b19Slide.append($b19Title);
             $b19Slide.append($b19Link1);
             $b19Slide.append($b19Link2);
             $b19Slide.append($b19Desc);
+        
+        $b14Slide.slideUp(0);
+        $b14Slide.css({
+            'display': 'none'
+        });
+        $b15Slide.slideUp(0);
+        $b15Slide.css({
+            'display': 'none'
+        });
+        $b16Slide.slideUp(0);
+        $b16Slide.css({
+            'display': 'none'
+        });
+        $b17Slide.slideUp(0);
+        $b17Slide.css({
+            'display': 'none'
+        });
+        $b18Slide.slideUp(0);
+        $b18Slide.css({
+            'display': 'none'
+        });
+        
         $b19Slide.css({
             'display': 'block'
         });
@@ -192,47 +332,18 @@ var unShowInfo = function(){
     } else if ($('.active').attr('id') == 'box6'){
         console.log("box6 inactive");
         
-    } else if (($('.active').attr('id') == 'box14') && (dataBoxes.box14Slide === 'on')){
+    } else if (($('.active').attr('id') == 'box14') && (dataBoxes.box14Slide === 'off')){
         console.log("box14 inactive");
-        $b14Slide.slideUp(0);
-        $b14Slide.css({
-            'display': 'none'
-        });
-        
-    } else if (($('.active').attr('id') == 'box15') && (dataBoxes.box15Slide === 'on')){
+    } else if (($('.active').attr('id') == 'box15') && (dataBoxes.box15Slide === 'off')){
         console.log("box15 inactive");
-        $b15Slide.slideUp(0);
-        $b15Slide.css({
-            'display': 'none'
-        });
-         
-    } else if (($('.active').attr('id') == 'box16') && (dataBoxes.box16Slide === 'on')){
+    } else if (($('.active').attr('id') == 'box16') && (dataBoxes.box16Slide === 'off')){
         console.log("box16 inactive");
-        $b16Slide.slideUp(0);
-        $b16Slide.css({
-            'display': 'none'
-        });
-        
-    } else if (($('.active').attr('id') == 'box17') && (dataBoxes.box17Slide === 'on')){
+    } else if (($('.active').attr('id') == 'box17') && (dataBoxes.box17Slide === 'off')){
         console.log("box17 inactive");
-        $b17Slide.slideUp(0);
-        $b17Slide.css({
-            'display': 'none'
-        });
-        
-    } else if (($('.active').attr('id') == 'box18') && (dataBoxes.box18Slide === 'on')){
-        console.log("box18 inactive");
-        $b18Slide.slideUp(0);
-        $b18Slide.css({
-            'display': 'none'
-        });
-        
-    } else if (($('.active').attr('id') == 'box19') && (dataBoxes.box19Slide === 'on')){
+    } else if (($('.active').attr('id') == 'box18') && (dataBoxes.box18Slide === 'off')){
+        console.log("box18 inactive");  
+    } else if (($('.active').attr('id') == 'box19') && (dataBoxes.box19Slide === 'off')){
         console.log("box19 inactive");
-        $b19Slide.slideUp(0);
-        $b19Slide.css({
-            'display': 'none'
-        });
     }
     $(this).removeClass('active').addClass('inActive'); //NCC
 };
@@ -253,5 +364,6 @@ $(function(){
     $('#box17').hover(showInfo,unShowInfo);
     $('#box18').hover(showInfo,unShowInfo);
     $('#box19').hover(showInfo,unShowInfo);
+    
     
 });
