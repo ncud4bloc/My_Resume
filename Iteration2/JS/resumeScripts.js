@@ -411,5 +411,7 @@ $(function(){
     $('#box18').hover(showInfo,unShowInfo);
     $('#box19').hover(showInfo,unShowInfo);
     
+    $('#box20').hover(zeroOB,nonZeroOB);
+    
     
 });
