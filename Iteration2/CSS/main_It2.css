@@ -163,6 +163,8 @@ body {
 #box14, #box15, #box16 {
     height: 240px;
     height: auto;
+    padding-left: 3px;
+    padding-top: 3px;
     border-top: 2px solid #04181c; /*#ddd;*/
     border-top: 2px solid #737e80;
 }
@@ -175,6 +177,8 @@ body {
 #box17, #box18, #box19 {
     height: 240px;
     height: auto;
+    padding-left: 3px;
+    padding-top: 3px;
     border-bottom: 2px #04181c; /*#ddd;*/
     border-bottom: 2px solid #737e80;
 }

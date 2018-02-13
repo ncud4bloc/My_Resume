@@ -83,6 +83,7 @@ var showInfo = function(){
         openBox = 14;
         
         $box14.css({
+            'border-bottom': '1px solid #e36a12',
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
@@ -100,6 +101,7 @@ var showInfo = function(){
         
         $b15Slide.slideUp(0);
         $box15.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b15Slide.css({
@@ -107,6 +109,7 @@ var showInfo = function(){
         });
         $b16Slide.slideUp(0);
         $box16.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b16Slide.css({
@@ -114,6 +117,7 @@ var showInfo = function(){
         });
         $b17Slide.slideUp(0);
         $box17.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b17Slide.css({
@@ -121,6 +125,7 @@ var showInfo = function(){
         });
         $b18Slide.slideUp(0);
         $box18.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b18Slide.css({
@@ -128,6 +133,7 @@ var showInfo = function(){
         });
         $b19Slide.slideUp(0);
         $box19.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b19Slide.css({
@@ -164,6 +170,7 @@ var showInfo = function(){
         
         $b14Slide.slideUp(0);
         $box14.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b14Slide.css({
@@ -171,6 +178,7 @@ var showInfo = function(){
         });
         $b16Slide.slideUp(0);
         $box16.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b16Slide.css({
@@ -178,6 +186,7 @@ var showInfo = function(){
         });
         $b17Slide.slideUp(0);
         $box17.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b17Slide.css({
@@ -185,6 +194,7 @@ var showInfo = function(){
         });
         $b18Slide.slideUp(0);
         $box18.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b18Slide.css({
@@ -192,6 +202,7 @@ var showInfo = function(){
         });
         $b19Slide.slideUp(0);
         $box19.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b19Slide.css({
@@ -229,6 +240,7 @@ var showInfo = function(){
         
         $b14Slide.slideUp(0);
         $box14.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b14Slide.css({
@@ -236,6 +248,7 @@ var showInfo = function(){
         });
         $b15Slide.slideUp(0);
         $box15.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b15Slide.css({
@@ -243,6 +256,7 @@ var showInfo = function(){
         });
         $b17Slide.slideUp(0);
         $box17.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b17Slide.css({
@@ -250,6 +264,7 @@ var showInfo = function(){
         });
         $b18Slide.slideUp(0);
         $box18.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b18Slide.css({
@@ -257,6 +272,7 @@ var showInfo = function(){
         });
         $b19Slide.slideUp(0);
         $box19.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b19Slide.css({
@@ -275,6 +291,7 @@ var showInfo = function(){
         openBox = 17;
         
         $box17.css({
+            'border-bottom': '3px solid #e36a12',
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
@@ -293,6 +310,7 @@ var showInfo = function(){
         
         $b14Slide.slideUp(0);
         $box14.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b14Slide.css({
@@ -300,6 +318,7 @@ var showInfo = function(){
         });
         $b15Slide.slideUp(0);
         $box15.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b15Slide.css({
@@ -307,6 +326,7 @@ var showInfo = function(){
         });
         $b16Slide.slideUp(0);
         $box16.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b16Slide.css({
@@ -314,6 +334,7 @@ var showInfo = function(){
         });
         $b18Slide.slideUp(0);
         $box18.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b18Slide.css({
@@ -321,6 +342,7 @@ var showInfo = function(){
         });
         $b19Slide.slideUp(0);
         $box19.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b19Slide.css({
@@ -339,6 +361,7 @@ var showInfo = function(){
         openBox = 18;
         
         $box18.css({
+            'border-bottom': '2px solid #e36a12',
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
@@ -357,6 +380,7 @@ var showInfo = function(){
         
         $b14Slide.slideUp(0);
         $box14.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b14Slide.css({
@@ -364,6 +388,7 @@ var showInfo = function(){
         });
         $b15Slide.slideUp(0);
         $box15.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b15Slide.css({
@@ -371,6 +396,7 @@ var showInfo = function(){
         });
         $b16Slide.slideUp(0);
         $box16.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b16Slide.css({
@@ -378,6 +404,7 @@ var showInfo = function(){
         });
         $b17Slide.slideUp(0);
         $box17.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b17Slide.css({
@@ -385,6 +412,7 @@ var showInfo = function(){
         });
         $b19Slide.slideUp(0);
         $box19.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b19Slide.css({
@@ -403,6 +431,7 @@ var showInfo = function(){
         openBox = 19;
         
         $box19.css({
+            'border-bottom': '2px solid #e36a12',
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
@@ -421,6 +450,7 @@ var showInfo = function(){
         
         $b14Slide.slideUp(0);
         $box14.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b14Slide.css({
@@ -428,6 +458,7 @@ var showInfo = function(){
         });
         $b15Slide.slideUp(0);
         $box15.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b15Slide.css({
@@ -435,6 +466,7 @@ var showInfo = function(){
         });
         $b16Slide.slideUp(0);
         $box16.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b16Slide.css({
@@ -442,6 +474,7 @@ var showInfo = function(){
         });
         $b17Slide.slideUp(0);
         $box17.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b17Slide.css({
@@ -449,6 +482,7 @@ var showInfo = function(){
         });
         $b18Slide.slideUp(0);
         $box18.css({
+            'background-color': '#737e80',
             'opacity': '0.25'
         });
         $b18Slide.css({
@@ -516,23 +550,29 @@ var zeroOB = function(){
     });
     
     $box14.css({
-            'opacity': '1.0'
-        });
+        'background-color': '#737e80',
+        'opacity': '1.0'
+    });
     $box15.css({
-            'opacity': '1.0'
-        });
+        'background-color': '#737e80',
+        'opacity': '1.0'
+    });
     $box16.css({
-            'opacity': '1.0'
-        });
+        'background-color': '#737e80',
+        'opacity': '1.0'
+    });
     $box17.css({
-            'opacity': '1.0'
-        });
+        'background-color': '#737e80',
+        'opacity': '1.0'
+    });
     $box18.css({
-            'opacity': '1.0'
-        });
+        'background-color': '#737e80',
+        'opacity': '1.0'
+    });
     $box19.css({
-            'opacity': '1.0'
-        });
+        'background-color': '#737e80',
+        'opacity': '1.0'
+    });
 };
 
 var nonZeroOB = function(){
