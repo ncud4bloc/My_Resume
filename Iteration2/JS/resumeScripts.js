@@ -123,6 +123,21 @@ var showInfo = function(){
     } else if (($('.active').attr('id') == 'box15') && (openBox != 15)){
         console.log("box15 active");
         openBox = 15;
+        /*
+        $box14.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        $box15.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        $box16.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        */
+       
         dataBoxes.box15Slide = 'on';
         dataBoxes.box14Slide == 'off';
         dataBoxes.box16Slide == 'off';
@@ -136,28 +151,44 @@ var showInfo = function(){
             $b15Slide.append($b15Desc);
         
         $b14Slide.slideUp(0);
+        $box14.css({
+            'opacity': '0.25'
+        });
         $b14Slide.css({
             'display': 'none'
         });
         $b16Slide.slideUp(0);
+        $box16.css({
+            'opacity': '0.25'
+        });
         $b16Slide.css({
             'display': 'none'
         });
         $b17Slide.slideUp(0);
+        $box17.css({
+            'opacity': '0.25'
+        });
         $b17Slide.css({
             'display': 'none'
         });
         $b18Slide.slideUp(0);
+        $box18.css({
+            'opacity': '0.25'
+        });
         $b18Slide.css({
             'display': 'none'
         });
         $b19Slide.slideUp(0);
+        $box19.css({
+            'opacity': '0.25'
+        });
         $b19Slide.css({
             'display': 'none'
         });
         
         $b15Slide.css({
-            'display': 'block'   
+            'display': 'block',
+            //'border-top': '4px solid #e36a12'
         });
         
         $b15Slide.slideUp(0);
