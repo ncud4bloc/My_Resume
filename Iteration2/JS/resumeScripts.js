@@ -562,14 +562,17 @@ var zeroOB = function(){
         'opacity': '1.0'
     });
     $box17.css({
+        'border-bottom': '3px solid #737e80',
         'background-color': '#737e80',
         'opacity': '1.0'
     });
     $box18.css({
+        'border-bottom': '2px solid #737e80',
         'background-color': '#737e80',
         'opacity': '1.0'
     });
     $box19.css({
+        'border-bottom': '2px solid #737e80',
         'background-color': '#737e80',
         'opacity': '1.0'
     });
