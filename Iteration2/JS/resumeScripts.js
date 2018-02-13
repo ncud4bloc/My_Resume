@@ -81,6 +81,12 @@ var showInfo = function(){
     } else if (($('.active').attr('id') == 'box14') && (openBox != 14)){
         console.log("box14 active");
         openBox = 14;
+        
+        $box14.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        
         dataBoxes.box14Slide == 'on';
         dataBoxes.box15Slide == 'off';
         dataBoxes.box16Slide == 'off';
@@ -93,22 +99,37 @@ var showInfo = function(){
             $b14Slide.append($b14Desc);
         
         $b15Slide.slideUp(0);
+        $box15.css({
+            'opacity': '0.25'
+        });
         $b15Slide.css({
             'display': 'none'
         });
         $b16Slide.slideUp(0);
+        $box16.css({
+            'opacity': '0.25'
+        });
         $b16Slide.css({
             'display': 'none'
         });
         $b17Slide.slideUp(0);
+        $box17.css({
+            'opacity': '0.25'
+        });
         $b17Slide.css({
             'display': 'none'
         });
         $b18Slide.slideUp(0);
+        $box18.css({
+            'opacity': '0.25'
+        });
         $b18Slide.css({
             'display': 'none'
         });
         $b19Slide.slideUp(0);
+        $box19.css({
+            'opacity': '0.25'
+        });
         $b19Slide.css({
             'display': 'none'
         });
@@ -123,20 +144,11 @@ var showInfo = function(){
     } else if (($('.active').attr('id') == 'box15') && (openBox != 15)){
         console.log("box15 active");
         openBox = 15;
-        /*
-        $box14.css({
-            'background-color': '#e36a12',
-            'opacity': '1.0'
-        });
+    
         $box15.css({
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
-        $box16.css({
-            'background-color': '#e36a12',
-            'opacity': '1.0'
-        });
-        */
        
         dataBoxes.box15Slide = 'on';
         dataBoxes.box14Slide == 'off';
@@ -197,6 +209,12 @@ var showInfo = function(){
     } else if (($('.active').attr('id') == 'box16') && (openBox != 16)){
         console.log("box16 active");
         openBox = 16;
+        
+        $box16.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        
         dataBoxes.box16Slide = 'on';
         dataBoxes.box14Slide == 'off';
         dataBoxes.box15Slide == 'off';
@@ -210,22 +228,37 @@ var showInfo = function(){
             $b16Slide.append($b16Desc);
         
         $b14Slide.slideUp(0);
+        $box14.css({
+            'opacity': '0.25'
+        });
         $b14Slide.css({
             'display': 'none'
         });
         $b15Slide.slideUp(0);
+        $box15.css({
+            'opacity': '0.25'
+        });
         $b15Slide.css({
             'display': 'none'
         });
         $b17Slide.slideUp(0);
+        $box17.css({
+            'opacity': '0.25'
+        });
         $b17Slide.css({
             'display': 'none'
         });
         $b18Slide.slideUp(0);
+        $box18.css({
+            'opacity': '0.25'
+        });
         $b18Slide.css({
             'display': 'none'
         });
         $b19Slide.slideUp(0);
+        $box19.css({
+            'opacity': '0.25'
+        });
         $b19Slide.css({
             'display': 'none'
         });
@@ -240,6 +273,12 @@ var showInfo = function(){
     } else if (($('.active').attr('id') == 'box17') && (openBox != 17)){
         console.log("box17 active");
         openBox = 17;
+        
+        $box17.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        
         dataBoxes.box17Slide = 'on';
         dataBoxes.box14Slide == 'off';
         dataBoxes.box15Slide == 'off';
@@ -253,22 +292,37 @@ var showInfo = function(){
             $b17Slide.append($b17Desc);
         
         $b14Slide.slideUp(0);
+        $box14.css({
+            'opacity': '0.25'
+        });
         $b14Slide.css({
             'display': 'none'
         });
         $b15Slide.slideUp(0);
+        $box15.css({
+            'opacity': '0.25'
+        });
         $b15Slide.css({
             'display': 'none'
         });
         $b16Slide.slideUp(0);
+        $box16.css({
+            'opacity': '0.25'
+        });
         $b16Slide.css({
             'display': 'none'
         });
         $b18Slide.slideUp(0);
+        $box18.css({
+            'opacity': '0.25'
+        });
         $b18Slide.css({
             'display': 'none'
         });
         $b19Slide.slideUp(0);
+        $box19.css({
+            'opacity': '0.25'
+        });
         $b19Slide.css({
             'display': 'none'
         });
@@ -283,6 +337,12 @@ var showInfo = function(){
     } else if (($('.active').attr('id') == 'box18') && (openBox != 18)){
         console.log("box18 active");
         openBox = 18;
+        
+        $box18.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        
         dataBoxes.box18Slide = 'on';
         dataBoxes.box14Slide == 'off';
         dataBoxes.box15Slide == 'off';
@@ -296,22 +356,37 @@ var showInfo = function(){
             $b18Slide.append($b18Desc);
         
         $b14Slide.slideUp(0);
+        $box14.css({
+            'opacity': '0.25'
+        });
         $b14Slide.css({
             'display': 'none'
         });
         $b15Slide.slideUp(0);
+        $box15.css({
+            'opacity': '0.25'
+        });
         $b15Slide.css({
             'display': 'none'
         });
         $b16Slide.slideUp(0);
+        $box16.css({
+            'opacity': '0.25'
+        });
         $b16Slide.css({
             'display': 'none'
         });
         $b17Slide.slideUp(0);
+        $box17.css({
+            'opacity': '0.25'
+        });
         $b17Slide.css({
             'display': 'none'
         });
         $b19Slide.slideUp(0);
+        $box19.css({
+            'opacity': '0.25'
+        });
         $b19Slide.css({
             'display': 'none'
         });
@@ -326,6 +401,12 @@ var showInfo = function(){
     } else if (($('.active').attr('id') == 'box19') && (openBox != 19)){
         console.log("box19 active");
         openBox = 19;
+        
+        $box19.css({
+            'background-color': '#e36a12',
+            'opacity': '1.0'
+        });
+        
         dataBoxes.box19Slide = 'on';
         dataBoxes.box14Slide == 'off';
         dataBoxes.box15Slide == 'off';
@@ -339,22 +420,37 @@ var showInfo = function(){
             $b19Slide.append($b19Desc);
         
         $b14Slide.slideUp(0);
+        $box14.css({
+            'opacity': '0.25'
+        });
         $b14Slide.css({
             'display': 'none'
         });
         $b15Slide.slideUp(0);
+        $box15.css({
+            'opacity': '0.25'
+        });
         $b15Slide.css({
             'display': 'none'
         });
         $b16Slide.slideUp(0);
+        $box16.css({
+            'opacity': '0.25'
+        });
         $b16Slide.css({
             'display': 'none'
         });
         $b17Slide.slideUp(0);
+        $box17.css({
+            'opacity': '0.25'
+        });
         $b17Slide.css({
             'display': 'none'
         });
         $b18Slide.slideUp(0);
+        $box18.css({
+            'opacity': '0.25'
+        });
         $b18Slide.css({
             'display': 'none'
         });
@@ -418,6 +514,25 @@ var zeroOB = function(){
     $b19Slide.css({
         'display': 'none'
     });
+    
+    $box14.css({
+            'opacity': '1.0'
+        });
+    $box15.css({
+            'opacity': '1.0'
+        });
+    $box16.css({
+            'opacity': '1.0'
+        });
+    $box17.css({
+            'opacity': '1.0'
+        });
+    $box18.css({
+            'opacity': '1.0'
+        });
+    $box19.css({
+            'opacity': '1.0'
+        });
 };
 
 var nonZeroOB = function(){
