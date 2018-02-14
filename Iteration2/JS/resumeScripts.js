@@ -141,6 +141,7 @@ var showInfo = function(){
         });
         
         $b14Slide.css({
+            'border-left': '2px solid #737e80',
             'display': 'block'
         });
         
@@ -211,6 +212,7 @@ var showInfo = function(){
         
         $b15Slide.css({
             'display': 'block',
+            'border-left': '2px solid #737e80'
             //'border-top': '4px solid #e36a12'
         });
         
@@ -350,6 +352,7 @@ var showInfo = function(){
         });
         
         $b17Slide.css({
+            'border-left': '2px solid #737e80',
             'display': 'block'
         });
         
@@ -551,6 +554,7 @@ var zeroOB = function(){
     
     $box14.css({
         'background-color': '#737e80',
+        'border-bottom': '1px solid #737e80',
         'opacity': '1.0'
     });
     $box15.css({
