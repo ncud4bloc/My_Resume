@@ -155,7 +155,11 @@ body {
     background-color: #737e80;
 }
 
-#box14t16 {
+/*.noDisp {
+    display: none;
+}*/
+
+#box14t16, #box14ex, #box15ex, #box16ex {
     width: 100%;
     height: auto;
 }
@@ -169,7 +173,7 @@ body {
     border-top: 2px solid #737e80;
 }
 
-#box17t19 {
+#box17t19, #box17ex, #box18ex, #box19ex {
     width: 100%;
     height: auto;
 }

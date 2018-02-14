@@ -27,7 +27,13 @@ var $box16 = $('#box16');
 var $box17 = $('#box17');
 var $box18 = $('#box18');
 var $box19 = $('#box19');
+var $box14ex = $('#box14ex');
+var $box15ex = $('#box15ex');
+var $box16ex = $('#box16ex');
 var $box14t16 = $('#box14t16');
+var $box17ex = $('#box17ex');
+var $box18ex = $('#box18ex');
+var $box19ex = $('#box19ex');
 var $box17t19 = $('#box17t19');
 
 var $b14Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Slide"></div>')
@@ -94,7 +100,25 @@ var showInfo = function(){
         dataBoxes.box17Slide == 'off';
         dataBoxes.box18Slide == 'off';
         dataBoxes.box18Slide == 'off';
-        $box14t16.append($b14Slide);
+        
+        if ($(window).width() >= 846){ 
+		  $box14t16.append($b14Slide);
+	    } else if ($(window).width() <= 845){
+          $box14ex.append($b14Slide);
+        }
+        
+        $(window).resize(function(){
+           /*$('.noDisp').css({
+            'display': 'block'
+           });*/
+	       if ($(window).width() >= 846){ 
+		      $box14t16.append($b14Slide);
+	       } else if ($(window).width() <= 845){
+              $box14ex.append($b14Slide);
+           }	
+        });
+        
+        //$box14t16.append($b14Slide);
             $b14Slide.append($b14Title);
             $b14Slide.append($b14Link1);
             $b14Slide.append($b14Desc);
@@ -606,5 +630,10 @@ $(function(){
     
     $('#box20').hover(zeroOB,nonZeroOB);
     
-    
+    $(window).resize(function(){
+	   if ($(window).width() <= 800){	
+		console.log("page width is less than 800");
+	   }	
+    });
+
 });
