@@ -21,7 +21,6 @@ body {
 }
 
 #box1 {
-    height: 120px;
     height: auto;
     background-color: #04181c;
 }
@@ -45,8 +44,6 @@ body {
 
 #myPhoto, #myLI, #myGH {
     height: 54px;
-    /*border: 2px solid #f00;
-    border-radius: 30px;*/
     background-color: #04181c;
     margin-top: -20px;
 }
@@ -60,29 +57,6 @@ body {
     width: 14px;
     margin-left: 20px;
 }
-
-/*
-#myPhoto {
-    background-image: url(../IMAGES/ncc.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-#myLI {
-    background-image: url(../IMAGES/Linkedin.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-#myGH {
-    background-image: url(../IMAGES/Octocat.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-*/
 
 #box2, #box3, #box4, #box5, #box6 {
     border-top: 2px solid #ddd;
@@ -112,7 +86,6 @@ body {
 
 @media (max-width: 768px) {  
   .hdrImages2, .hdrImages3 {
-    /*height: 40%;*/
     float: right;
     margin-top: 17px;
   }
@@ -122,7 +95,6 @@ body {
   }
   #myGH {
     width: 14px;
-    /*margin-left: 10px;*/
   }
 }
 
@@ -134,7 +106,6 @@ body {
 
 #box13 {
     height: auto;
-    background-color: #04181c;
     background-color: #737e80;
     margin-top: 30px;
     margin-bottom: 5px;
@@ -146,18 +117,9 @@ body {
     z-index: 1;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     color: #e36a12;
-    /*border: 1px solid #737e80;*/ /*#ddd;*/
-    /*border-radius: 10px;*/
     text-align: center;
-    /*padding-top: 110px;*/
-    background-color: #557c33;
-    background-color: #04181c;
     background-color: #737e80;
 }
-
-/*.noDisp {
-    display: none;
-}*/
 
 #box14t16, #box14ex, #box15ex, #box16ex {
     width: 100%;
@@ -165,11 +127,9 @@ body {
 }
 
 #box14, #box15, #box16 {
-    height: 240px;
     height: auto;
     padding-left: 3px;
     padding-top: 3px;
-    border-top: 2px solid #04181c; /*#ddd;*/
     border-top: 2px solid #737e80;
 }
 
@@ -179,16 +139,13 @@ body {
 }
 
 #box17, #box18, #box19 {
-    height: 240px;
     height: auto;
     padding-left: 3px;
     padding-top: 3px;
-    border-bottom: 2px #04181c; /*#ddd;*/
     border-bottom: 2px solid #737e80;
 }
 
 #box14, #box17 {
-    border-left: 2px solid #04181c; /*#ddd;*/
     border-left: 2px solid #737e80;
 }
 
@@ -198,7 +155,6 @@ body {
 
 #box16, #box19 {
     clear: right;
-    /*border-right: 2px solid #04181c;*/
 }
 
 .projImages {
@@ -207,7 +163,6 @@ body {
 
 .dataPage {
     height: auto;
-    background-color: #737e80;
     background-color: #e36a12;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     color: #ddd;
