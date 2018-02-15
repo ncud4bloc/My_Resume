@@ -1,5 +1,5 @@
 #box1 {
-    height: 300px;
+    height: auto;
 }
 
 #box3 {
@@ -15,9 +15,9 @@
     border-left: 2px solid #ddd;
 }
 
-#box13 {
+/*#box13 {
     margin-top: 40px;
-}
+}*/
 
 #box14, #box17 {
     border-left: 0px solid #04181c; 

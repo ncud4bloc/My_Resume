@@ -80,11 +80,11 @@ body {
     text-align: left;
 }
 
-@media (max-width: 892px) {  
+/*@media (max-width: 892px) {  
   #box13 {
     margin-top: 50px !important;
   }
-}
+}*/
 
 @media (max-width: 768px) {  
   .hdrImages2, .hdrImages3 {
@@ -185,13 +185,13 @@ body {
 }
 
 a:link {
-    color: red;
-    text-decoration-color: red;
+    color: #000;
+    text-decoration-color: #000;
 }
 
 a:visited {
-    color: black;
-    text-decoration-color: black;
+    color: #7c5252;
+    text-decoration-color: #7c5252;
 }
 
 .ftrBox {
