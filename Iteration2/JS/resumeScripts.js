@@ -161,6 +161,8 @@ var showInfo = function(){
         });
         
         $b14Slide.css({
+            'margin-top': '-1px',
+            'border-bottom': '2px',
             'border-left': '2px solid #737e80',
             'display': 'block'
         });
@@ -413,6 +415,8 @@ var showInfo = function(){
         });
         
         $b17Slide.css({
+            'margin-top': '-1px',
+            'border-bottom': '1px',
             'border-left': '2px solid #737e80',
             'display': 'block'
         });
@@ -588,6 +592,7 @@ var showInfo = function(){
         $b19Slide.slideUp(0);
         $b19Slide.slideDown(500);
     }
+    
 };
 
 var unShowInfo = function(){
