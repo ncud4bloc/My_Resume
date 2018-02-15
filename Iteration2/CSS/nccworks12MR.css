@@ -6,7 +6,7 @@ body {
 .grid {
     overflow: auto;     /* Takes care of collapsing div */
     width: 100%;        /* Takes care of collapsing div */
-    background-color: #fff;
+    background-color: #04181c;
     /*background: linear-gradient(#c4c4c4, #fff)*/
     padding-left: 0; /* For Making the Outside Gutters */
 }
