@@ -6,8 +6,11 @@ var pageWidth = ($(window).width());
 var openBox;
 var dataBoxes = {
     box4 : 'on',
+    box4Slide : 'on',
     box5 : 'on',
+    box5Slide : 'on',
     box6 : 'on',
+    box6Slide : 'on',
     box14 : 'on',
     box14Slide : 'on',
     box15 : 'on',
@@ -22,8 +25,8 @@ var dataBoxes = {
     box19Slide : 'on'
 };
 var $box4 = $('#box4');
-/*var $box5ex = $('#box5ex');
-var $box6ex = $('#box6ex');*/
+var $box5 = $('#box5');
+var $box6 = $('#box6');
 var $box14 = $('#box14');
 var $box15 = $('#box15');
 var $box16 = $('#box16');
@@ -46,6 +49,9 @@ var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" i
 
 var $b5Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Slide"></div>');
 var $b5Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk1"><p><a href="../HTML/page2.html#myPersonalBackground" target="_blank">Personal Information</a></p></div>');
+
+var $b6Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Slide"></div>');
+var $b6Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk1"><p><a href="../HTML/page2.html#myContact" target="_blank">Contact Information</a></p></div>');
 
 var $b14Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Slide"></div>');
 var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p>Ruby Hangman:</p></div>');
@@ -88,27 +94,53 @@ var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" 
 
 var showInfo = function(){
     $(this).removeClass('inActive').addClass('active');
-    if(($('.active').attr('id') == 'box4') && (openBox != 14)){
+    if(($('.active').attr('id') == 'box4') && (openBox != 4)){
         console.log("box4 active");
         openBox = 4;
         
         $box4.css({
-            'border-bottom': '1px solid #ddd',
-            'border-right': '1px solid #ddd',
-            'border-left': '1px solid #ddd',
-            'background-color': '#ddd !important',
-            'padding-left': '2px',
-            'opacity': '1.0'
+            'background-color': '#ddd',
+            'padding-left': '2px'
         });
+        
+        dataBoxes.box4Slide = 'on';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box18Slide = 'off';
         
         $box4.append($b4Slide);
             $b4Slide.append($b4Lynk1);
             $b4Slide.append($b4Lynk2);
             $b4Slide.append($b4Lynk3);
         
+        $b5Slide.slideUp(0);
+        $box5.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b5Slide.css({
+            'display': 'none'
+        });
+        
+        $b6Slide.slideUp(0);
+        $box6.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b6Slide.css({
+            'display': 'none'
+        });
+        
         $b4Slide.css({
             'position': 'absolute',
             'box-sizing': 'content-box',
+            'border-bottom-left-radius': '5px',
+            'border-bottom-right-radius': '5px',
             'background-color': '#ddd',
             'margin-left': '-4px',
             'height': 'auto',
@@ -125,7 +157,8 @@ var showInfo = function(){
             'margin-bottom': '10px'
         });
         
-        
+        $b4Slide.slideUp(0);
+        $b4Slide.slideDown(500);
         
         
         
@@ -144,12 +177,15 @@ var showInfo = function(){
             'opacity': '1.0'
         });
         
-        dataBoxes.box14Slide == 'on';
-        dataBoxes.box15Slide == 'off';
-        dataBoxes.box16Slide == 'off';
-        dataBoxes.box17Slide == 'off';
-        dataBoxes.box18Slide == 'off';
-        dataBoxes.box18Slide == 'off';
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'on';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box18Slide = 'off';
         
         if ($(window).width() >= 846){ 
 		  $box14t16.append($b14Slide);
@@ -228,13 +264,16 @@ var showInfo = function(){
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
-       
+        
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'off';
         dataBoxes.box15Slide = 'on';
-        dataBoxes.box14Slide == 'off';
-        dataBoxes.box16Slide == 'off';
-        dataBoxes.box17Slide == 'off';
-        dataBoxes.box18Slide == 'off';
-        dataBoxes.box19Slide == 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'off';
         
         if ($(window).width() >= 846){ 
 		  $box14t16.append($b15Slide);
@@ -313,12 +352,15 @@ var showInfo = function(){
             'opacity': '1.0'
         });
         
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
         dataBoxes.box16Slide = 'on';
-        dataBoxes.box14Slide == 'off';
-        dataBoxes.box15Slide == 'off';
-        dataBoxes.box17Slide == 'off';
-        dataBoxes.box18Slide == 'off';
-        dataBoxes.box19Slide == 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'off';
         
         if ($(window).width() >= 846){ 
 		  $box14t16.append($b16Slide);
@@ -397,12 +439,15 @@ var showInfo = function(){
             'opacity': '1.0'
         });
         
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
         dataBoxes.box17Slide = 'on';
-        dataBoxes.box14Slide == 'off';
-        dataBoxes.box15Slide == 'off';
-        dataBoxes.box16Slide == 'off';
-        dataBoxes.box18Slide == 'off';
-        dataBoxes.box19Slide == 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'off';
         
         if ($(window).width() >= 846){ 
 		  $box17t19.append($b17Slide);
@@ -484,12 +529,15 @@ var showInfo = function(){
             'opacity': '1.0'
         });
         
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
         dataBoxes.box18Slide = 'on';
-        dataBoxes.box14Slide == 'off';
-        dataBoxes.box15Slide == 'off';
-        dataBoxes.box16Slide == 'off';
-        dataBoxes.box17Slide == 'off';
-        dataBoxes.box19Slide == 'off';
+        dataBoxes.box19Slide = 'off';
         
         if ($(window).width() >= 846){ 
 		  $box17t19.append($b18Slide);
@@ -568,12 +616,15 @@ var showInfo = function(){
             'opacity': '1.0'
         });
         
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
         dataBoxes.box19Slide = 'on';
-        dataBoxes.box14Slide == 'off';
-        dataBoxes.box15Slide == 'off';
-        dataBoxes.box16Slide == 'off';
-        dataBoxes.box17Slide == 'off';
-        dataBoxes.box18Slide == 'off';
         
         if ($(window).width() >= 846){ 
 		  $box17t19.append($b19Slide);
@@ -671,6 +722,15 @@ var unShowInfo = function(){
 
 var zeroOB = function(){
     openBox = 0;
+    $box4.css({
+        'background-color': '#04181c',
+        'padding-left': '0px'
+    });
+    $b4Slide.slideUp(0);
+    
+    $b4Slide.css({
+        'display': 'none'
+    });
     $b14Slide.slideUp(0);
     $b14Slide.css({
         'display': 'none'
@@ -740,6 +800,8 @@ $(function(){
     $('#box4').hover(showInfo,unShowInfo);
     $('#box5').hover(showInfo,unShowInfo);
     $('#box6').hover(showInfo,unShowInfo);
+    
+    $('#box7').hover(zeroOB,nonZeroOB);
     
     $('#box14').hover(showInfo,unShowInfo);
     $('#box15').hover(showInfo,unShowInfo);
