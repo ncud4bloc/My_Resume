@@ -21,8 +21,8 @@ var dataBoxes = {
     box19 : 'on',
     box19Slide : 'on'
 };
-/*var $box4ex = $('#box4ex');
-var $box5ex = $('#box5ex');
+var $box4 = $('#box4');
+/*var $box5ex = $('#box5ex');
 var $box6ex = $('#box6ex');*/
 var $box14 = $('#box14');
 var $box15 = $('#box15');
@@ -88,8 +88,47 @@ var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" 
 
 var showInfo = function(){
     $(this).removeClass('inActive').addClass('active');
-    if($('.active').attr('id') == 'box4'){
+    if(($('.active').attr('id') == 'box4') && (openBox != 14)){
         console.log("box4 active");
+        openBox = 4;
+        
+        $box4.css({
+            'border-bottom': '1px solid #ddd',
+            'border-right': '1px solid #ddd',
+            'border-left': '1px solid #ddd',
+            'background-color': '#ddd !important',
+            'padding-left': '2px',
+            'opacity': '1.0'
+        });
+        
+        $box4.append($b4Slide);
+            $b4Slide.append($b4Lynk1);
+            $b4Slide.append($b4Lynk2);
+            $b4Slide.append($b4Lynk3);
+        
+        $b4Slide.css({
+            'position': 'absolute',
+            'box-sizing': 'content-box',
+            'background-color': '#ddd',
+            'margin-left': '-4px',
+            'height': 'auto',
+            'z-index': '10',
+            'padding-right': '4px'
+        });
+        
+        $b4Lynk2.css({
+            'margin-top': '-15px'
+        });
+        
+        $b4Lynk3.css({
+            'margin-top': '-15px',
+            'margin-bottom': '10px'
+        });
+        
+        
+        
+        
+        
     } else if ($('.active').attr('id') == 'box5'){
         console.log("box5 active");
     } else if ($('.active').attr('id') == 'box6'){

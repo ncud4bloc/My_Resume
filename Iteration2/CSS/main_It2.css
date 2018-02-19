@@ -184,6 +184,19 @@ body {
     padding-top: 3px;
 }
 
+[id*="Lynk"] {
+    box-sizing: border-box;
+    font-family: "Poiret One", cursive;
+    font-size: 16px;
+    font-style: italic;
+    color: #e36a12 !important;
+    font-weight: 600;
+    padding-left: 10px;
+    text-align: left;
+    background-color: #ddd;
+    /*margin-left: 3px !important;*/
+}
+
 a:link {
     color: #000;
     text-decoration-color: #000;
