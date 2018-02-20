@@ -68,6 +68,10 @@ body {
     margin-left: 20px;
 }
 
+#box6 {
+    text-align: center;
+}
+
 #box2, #box3, #box4, #box5, #box6 {
     border-top: 2px solid #ddd;
 }

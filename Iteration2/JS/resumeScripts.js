@@ -6,23 +6,23 @@ var pageWidth = ($(window).width());
 var openBox;
 var dataBoxes = {
     box4 : 'on',
-    box4Slide : 'on',
+    box4Slide : 'off',
     box5 : 'on',
-    box5Slide : 'on',
+    box5Slide : 'off',
     box6 : 'on',
-    box6Slide : 'on',
+    box6Slide : 'off',
     box14 : 'on',
-    box14Slide : 'on',
+    box14Slide : 'off',
     box15 : 'on',
-    box15Slide : 'on',
+    box15Slide : 'off',
     box16 : 'on',
-    box16Slide : 'on',
+    box16Slide : 'off',
     box17 : 'on',
-    box17Slide : 'on',
+    box17Slide : 'off',
     box18 : 'on',
-    box18Slide : 'on',
+    box18Slide : 'off',
     box19 : 'on',
-    box19Slide : 'on'
+    box19Slide : 'off'
 };
 var $box4 = $('#box4');
 var $box5 = $('#box5');
@@ -140,11 +140,11 @@ var showInfo = function(){
             
           $box5.css({
               'text-align': 'right',
-              'padding-right': '20px'
+              'padding-right': '30px'
           });
             $box6.css({
               'text-align': 'right',
-              'padding-right': '20px'
+              'padding-right': '30px'
           });
         }
         
@@ -171,11 +171,11 @@ var showInfo = function(){
             
           $box5.css({
               'text-align': 'right',
-              'padding-right': '20px'
+              'padding-right': '30px'
           });
             $box6.css({
               'text-align': 'right',
-              'padding-right': '20px'
+              'padding-right': '30px'
           });
            }	
         });
@@ -188,7 +188,7 @@ var showInfo = function(){
         $b5Slide.slideUp(0);
         $box5.css({
             'background-color': '#04181c',
-            'padding-left': '0px'
+            'padding-right': '0px'
         });
         $b5Slide.css({
             'display': 'none'
@@ -197,7 +197,7 @@ var showInfo = function(){
         $b6Slide.slideUp(0);
         $box6.css({
             'background-color': '#04181c',
-            'padding-left': '0px'
+            'padding-right': '0px'
         });
         $b6Slide.css({
             'display': 'none'
@@ -270,12 +270,13 @@ var showInfo = function(){
           });
             
           $box5.css({
-              'text-align': 'center'
+              'text-align': 'center',
+              'padding-right': '0px'
           });
             
           $box6.css({
               'text-align': 'right',
-              'padding-right': '20px'
+              'padding-right': '30px'
           });
         }
         
@@ -306,7 +307,7 @@ var showInfo = function(){
                
             $box6.css({
               'text-align': 'right',
-              'padding-right': '20px'
+              'padding-right': '30px'
             });
            }	
         });
@@ -319,7 +320,7 @@ var showInfo = function(){
         $b4Slide.slideUp(0);
         $box4.css({
             'background-color': '#04181c',
-            'padding-left': '0px'
+            'padding-right': '0px'
         });
         $b4Slide.css({
             'display': 'none'
@@ -328,7 +329,7 @@ var showInfo = function(){
         $b6Slide.slideUp(0);
         $box6.css({
             'background-color': '#04181c',
-            'padding-left': '0px'
+            'padding-right': '0px'
         });
         $b6Slide.css({
             'display': 'none'
@@ -443,7 +444,7 @@ var showInfo = function(){
         $b4Slide.slideUp(0);
         $box4.css({
             'background-color': '#04181c',
-            'padding-left': '0px'
+            'padding-right': '0px'
         });
         $b4Slide.css({
             'display': 'none'
@@ -452,7 +453,7 @@ var showInfo = function(){
         $b5Slide.slideUp(0);
         $box5.css({
             'background-color': '#04181c',
-            'padding-left': '0px'
+            'padding-right': '0px'
         });
         $b5Slide.css({
             'display': 'none'
@@ -1250,5 +1251,20 @@ $(function(){
     $('#box19').hover(showInfo,unShowInfo);
     
     $('#box20').hover(zeroOB,nonZeroOB);
+    
+    if(($('.active').attr('id') != 'box4') && ($('.active').attr('id') != 'box5') && ($('.active').attr('id') != 'box6')){
+        $box4.css({
+            'text-align': 'center !important',
+            'padding-right': '0px !important'
+        });
+        $box5.css({
+            'text-align': 'center !important',
+            'padding-right': '0px !important'
+        });
+        $box6.css({
+            'text-align': 'center !important',
+            'padding-right': '0px !important'
+        });
+    };
 
 });
