@@ -48,10 +48,14 @@ var $b4Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" i
 var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk3"><p><a href="../HTML/page2.html#myResume" target="_blank">Professional Background</a></p></div>');
 
 var $b5Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Slide"></div>');
-var $b5Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk1"><p><a href="../HTML/page2.html#myPersonalBackground" target="_blank">Personal Information</a></p></div>');
+var $b5Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk1"><p><a href="../HTML/page2.html#myPersonalBackground" target="_blank">Personal Background</a></p></div>');
+var $b5Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk2"><p><a href="../HTML/page2.html#myFamily" target="_blank">Family</a></p></div>');
+var $b5Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk3"><p><a href="../HTML/page2.html#myHobbies" target="_blank">Hobbies</a></p></div>');
 
 var $b6Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Slide"></div>');
-var $b6Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk1"><p><a href="../HTML/page2.html#myContact" target="_blank">Contact Information</a></p></div>');
+var $b6Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk1"><p><a href="../HTML/page2.html#myPhone" target="_blank">Phone</a></p></div>');
+var $b6Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk2"><p><a href="../HTML/page2.html#myEmail" target="_blank">Email</a></p></div>');
+var $b6Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk3"><p><a href="../HTML/page2.html#myAddress" target="_blank">Address</a></p></div>');
 
 var $b14Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Slide"></div>');
 var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p>Ruby Hangman:</p></div>');
@@ -162,10 +166,138 @@ var showInfo = function(){
         
         
         
-    } else if ($('.active').attr('id') == 'box5'){
+    } else if (($('.active').attr('id') == 'box5') && (openBox != 5)){
         console.log("box5 active");
+        openBox = 5;
+        
+        $box5.css({
+            'background-color': '#ddd',
+            'padding-left': '2px'
+        });
+        
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'on';
+        dataBoxes.box6Slide = 'off';
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        
+        $box5.append($b5Slide);
+            $b5Slide.append($b5Lynk1);
+            $b5Slide.append($b5Lynk2);
+            $b5Slide.append($b5Lynk3);
+        
+        $b4Slide.slideUp(0);
+        $box4.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b4Slide.css({
+            'display': 'none'
+        });
+        
+        $b6Slide.slideUp(0);
+        $box6.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b6Slide.css({
+            'display': 'none'
+        });
+        
+        $b5Slide.css({
+            'position': 'absolute',
+            'box-sizing': 'content-box',
+            'border-bottom-left-radius': '5px',
+            'border-bottom-right-radius': '5px',
+            'background-color': '#ddd',
+            'margin-left': '-4px',
+            'height': 'auto',
+            'z-index': '10',
+            'padding-right': '4px'
+        });
+        
+        $b5Lynk2.css({
+            'margin-top': '-15px'
+        });
+        
+        $b5Lynk3.css({
+            'margin-top': '-15px',
+            'margin-bottom': '10px'
+        });
+        
+        $b5Slide.slideUp(0);
+        $b5Slide.slideDown(500);
+        
+        
     } else if ($('.active').attr('id') == 'box6'){
         console.log("box6 active");
+        openBox = 6;
+        
+        $box6.css({
+            'background-color': '#ddd',
+            'padding-left': '2px'
+        });
+        
+        dataBoxes.box4Slide = 'off';
+        dataBoxes.box5Slide = 'off';
+        dataBoxes.box6Slide = 'on';
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        
+        $box6.append($b6Slide);
+            $b6Slide.append($b6Lynk1);
+            $b6Slide.append($b6Lynk2);
+            $b6Slide.append($b6Lynk3);
+        
+        $b4Slide.slideUp(0);
+        $box4.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b4Slide.css({
+            'display': 'none'
+        });
+        
+        $b5Slide.slideUp(0);
+        $box5.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b5Slide.css({
+            'display': 'none'
+        });
+        
+        $b6Slide.css({
+            'position': 'absolute',
+            'box-sizing': 'content-box',
+            'border-bottom-left-radius': '5px',
+            'border-bottom-right-radius': '5px',
+            'background-color': '#ddd',
+            'margin-left': '-4px',
+            'height': 'auto',
+            'z-index': '10',
+            'padding-right': '4px'
+        });
+        
+        $b6Lynk2.css({
+            'margin-top': '-15px'
+        });
+        
+        $b6Lynk3.css({
+            'margin-top': '-15px',
+            'margin-bottom': '10px'
+        });
+        
+        $b6Slide.slideUp(0);
+        $b6Slide.slideDown(500);
         
     } else if (($('.active').attr('id') == 'box14') && (openBox != 14)){
         console.log("box14 active");
@@ -204,6 +336,34 @@ var showInfo = function(){
             $b14Slide.append($b14Title);
             $b14Slide.append($b14Link1);
             $b14Slide.append($b14Desc);
+        
+        $box4.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b4Slide.slideUp(0);
+    
+        $b4Slide.css({
+            'display': 'none'
+        });
+        $box5.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b5Slide.slideUp(0);
+    
+        $b5Slide.css({
+            'display': 'none'
+        });
+        $box6.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b6Slide.slideUp(0);
+    
+        $b6Slide.css({
+            'display': 'none'
+        });
         
         $b15Slide.slideUp(0);
         $box15.css({
@@ -294,6 +454,34 @@ var showInfo = function(){
             $b15Slide.append($b15Link2);
             $b15Slide.append($b15Desc);
         
+        $box4.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b4Slide.slideUp(0);
+    
+        $b4Slide.css({
+            'display': 'none'
+        });
+        $box5.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b5Slide.slideUp(0);
+    
+        $b5Slide.css({
+            'display': 'none'
+        });
+        $box6.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b6Slide.slideUp(0);
+    
+        $b6Slide.css({
+            'display': 'none'
+        });
+        
         $b14Slide.slideUp(0);
         $box14.css({
             'background-color': '#737e80',
@@ -380,6 +568,34 @@ var showInfo = function(){
             $b16Slide.append($b16Link1);
             $b16Slide.append($b16Link2);
             $b16Slide.append($b16Desc);
+        
+        $box4.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b4Slide.slideUp(0);
+    
+        $b4Slide.css({
+            'display': 'none'
+        });
+        $box5.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b5Slide.slideUp(0);
+    
+        $b5Slide.css({
+            'display': 'none'
+        });
+        $box6.css({
+            'background-color': '#04181c',
+            'padding-left': '0px'
+        });
+        $b6Slide.slideUp(0);
+    
+        $b6Slide.css({
+            'display': 'none'
+        });
         
         $b14Slide.slideUp(0);
         $box14.css({
@@ -731,6 +947,27 @@ var zeroOB = function(){
     $b4Slide.css({
         'display': 'none'
     });
+    
+    $box5.css({
+        'background-color': '#04181c',
+        'padding-left': '0px'
+    });
+    $b5Slide.slideUp(0);
+    
+    $b5Slide.css({
+        'display': 'none'
+    });
+    
+    $box6.css({
+        'background-color': '#04181c',
+        'padding-left': '0px'
+    });
+    $b6Slide.slideUp(0);
+    
+    $b6Slide.css({
+        'display': 'none'
+    });
+    
     $b14Slide.slideUp(0);
     $b14Slide.css({
         'display': 'none'
@@ -796,6 +1033,7 @@ var nonZeroOB = function(){
 $(function(){
     
     $('#box1').hover(zeroOB,nonZeroOB);
+    $('#box3').hover(zeroOB,nonZeroOB);
     
     $('#box4').hover(showInfo,unShowInfo);
     $('#box5').hover(showInfo,unShowInfo);
