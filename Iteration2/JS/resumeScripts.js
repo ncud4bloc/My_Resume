@@ -190,8 +190,8 @@ var showInfo = function(){
         
         $b5Slide.slideUp(0);
         $box5.css({
-            'background-color': '#04181c',
-            'padding-right': '0px'
+            'background-color': '#04181c'
+            /*'padding-right': '0px'*/
         });
         $b5Slide.css({
             'display': 'none'
@@ -199,8 +199,8 @@ var showInfo = function(){
         
         $b6Slide.slideUp(0);
         $box6.css({
-            'background-color': '#04181c',
-            'padding-right': '0px'
+            'background-color': '#04181c'
+            /*'padding-right': '0px'*/
         });
         $b6Slide.css({
             'display': 'none'
@@ -333,8 +333,8 @@ var showInfo = function(){
         
         $b6Slide.slideUp(0);
         $box6.css({
-            'background-color': '#04181c',
-            'padding-right': '0px'
+            'background-color': '#04181c'
+            /*'padding-right': '0px'*/
         });
         $b6Slide.css({
             'display': 'none'
@@ -1118,16 +1118,16 @@ var unShowInfo = function(){
     
     if(($(window).width() <= 845)){
         $box4.css({
-            'text-align': 'center !important',
-            'padding-right': '0px !important'
+            'text-align': 'center',
+            'padding-right': '0px'
         });
         $box5.css({
-            'text-align': 'center !important',
-            'padding-right': '0px !important'
+            'text-align': 'center',
+            'padding-right': '0px'
         });
         $box6.css({
-            'text-align': 'center !important',
-            'padding-right': '0px !important'
+            'text-align': 'center',
+            'padding-right': '0px'
         });
     };
     
