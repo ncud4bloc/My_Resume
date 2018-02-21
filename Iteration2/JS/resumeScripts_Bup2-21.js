@@ -104,6 +104,7 @@ var showInfo = function(){
         
         $box4.css({
             'background-color': '#ddd',
+            'padding-left': '2px'
         });
         
         dataBoxes.box4Slide = 'on';
@@ -119,8 +120,7 @@ var showInfo = function(){
         if ($(window).width() >= 846){ 
 		  $b4Slide.css({
               'position': 'absolute',
-              'width': '100%',
-              'left': '2px'
+              'width': '100%'
           });
           $b5Slide.css({
               'position': 'absolute',
@@ -204,6 +204,7 @@ var showInfo = function(){
         });
         
         $b4Slide.css({
+            /*'position': 'absolute',*/
             'box-sizing': 'content-box',
             'border-bottom-left-radius': '5px',
             'border-bottom-right-radius': '5px',
@@ -234,6 +235,7 @@ var showInfo = function(){
         
         $box5.css({
             'background-color': '#ddd',
+            'padding-left': '2px'
         });
         
         dataBoxes.box4Slide = 'off';
@@ -253,8 +255,7 @@ var showInfo = function(){
           });
           $b5Slide.css({
               'position': 'absolute',
-              'width': '100%',
-              'left': '2px'
+              'width': '100%'
           });
           $b6Slide.css({
               'position': 'absolute',
@@ -335,6 +336,7 @@ var showInfo = function(){
         });
         
         $b5Slide.css({
+            /*'position': 'absolute',*/
             'box-sizing': 'content-box',
             'border-bottom-left-radius': '5px',
             'border-bottom-right-radius': '5px',
@@ -364,6 +366,7 @@ var showInfo = function(){
         
         $box6.css({
             'background-color': '#ddd',
+            'padding-left': '2px'
         });
         
         dataBoxes.box4Slide = 'off';
@@ -387,7 +390,6 @@ var showInfo = function(){
           });
           $b6Slide.css({
               'position': 'absolute',
-              'left': '2px',
               'width': '100%'
           });
             
@@ -458,6 +460,7 @@ var showInfo = function(){
         });
         
         $b6Slide.css({
+            /*'position': 'absolute',*/
             'box-sizing': 'content-box',
             'border-bottom-left-radius': '5px',
             'border-bottom-right-radius': '5px',
@@ -1122,7 +1125,8 @@ var zeroOB = function(){
     $box4.css({
         'background-color': '#04181c',
         'padding-left': '0px',
-        'text-align': 'center'
+        'text-align': 'center',
+        'padding-right': '0px'
     });
     $b4Slide.slideUp(0);
     
@@ -1133,8 +1137,14 @@ var zeroOB = function(){
     $box5.css({
         'background-color': '#04181c',
         'padding-left': '0px',
-        'text-align': 'center'
+        'text-align': 'center',
+        'padding-right': '0px'
     });
+    
+    /*$box5.css({
+        'text-align': 'center',
+        'padding-right': '0px'
+    });*/
     
     $b5Slide.slideUp(0);
     
@@ -1145,8 +1155,14 @@ var zeroOB = function(){
     $box6.css({
         'background-color': '#04181c',
         'padding-left': '0px',
-        'text-align': 'center'
+        'text-align': 'center',
+        'padding-right': '0px'
     });
+    
+    /*$box6.css({
+        'text-align': 'center',
+        'padding-right': '0px'
+    });*/
     
     $b6Slide.slideUp(0);
     
