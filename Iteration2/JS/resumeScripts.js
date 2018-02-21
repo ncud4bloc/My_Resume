@@ -135,14 +135,15 @@ var showInfo = function(){
           $b4Slide.css({
               'position': 'absolute',
               'box-sizing': 'content-box',
-              'width': '60%'
+              'width': '60%',
+              'left': '2px'
           });
             
           $box5.css({
               'text-align': 'right',
               'padding-right': '30px'
           });
-            $box6.css({
+          $box6.css({
               'text-align': 'right',
               'padding-right': '30px'
           });
@@ -152,7 +153,8 @@ var showInfo = function(){
 	       if ($(window).width() >= 846){ 
 		      $b4Slide.css({
                 'position': 'absolute',
-                  'width': '100%'
+                'width': '100%',
+                'left': '2px'
               });
               $b5Slide.css({
                 'position': 'absolute',
@@ -166,7 +168,8 @@ var showInfo = function(){
               $b4Slide.css({
               'position': 'absolute',
               'box-sizing': 'content-box',
-              'width': '60%'
+              'width': '60%',
+              'left': '2px'
           });
             
           $box5.css({
@@ -265,7 +268,8 @@ var showInfo = function(){
           $b5Slide.css({
               'position': 'absolute',
               'box-sizing': 'content-box',
-              'width': '60%'
+              'width': '60%',
+              'left': '2px'
           });
             
           $box5.css({
@@ -287,7 +291,8 @@ var showInfo = function(){
               });
               $b5Slide.css({
                 'position': 'absolute',
-                  'width': '100%'
+                'width': '100%',
+                'left': '2px'
               });
               $b6Slide.css({
                 'position': 'absolute',
@@ -297,7 +302,8 @@ var showInfo = function(){
               $b5Slide.css({
               'position': 'absolute',
               'box-sizing': 'content-box',
-              'width': '60%'
+              'width': '60%',
+              'left': '2px'
           });
             
             $box5.css({
@@ -395,7 +401,8 @@ var showInfo = function(){
           $b6Slide.css({
               'position': 'absolute',
               'box-sizing': 'content-box',
-              'width': '60%'
+              'width': '60%',
+              'left': '2px'
           });
             
           $box5.css({
@@ -419,13 +426,15 @@ var showInfo = function(){
               });
               $b6Slide.css({
                 'position': 'absolute',
-                  'width': '100%'
+                'width': '100%',
+                'left': '2px'
               });
 	       } else if ($(window).width() <= 845){
               $b6Slide.css({
               'position': 'absolute',
               'box-sizing': 'content-box',
-              'width': '60%'
+              'width': '60%',
+              'left': '2px'
           });
             
             $box6.css({
@@ -1094,13 +1103,40 @@ var showInfo = function(){
 };
 
 var unShowInfo = function(){
+    
+    openBox = 0;
+    
+    dataBoxes.box4Slide = 'off';
+    dataBoxes.box5Slide = 'off';
+    dataBoxes.box6Slide = 'off';
+    dataBoxes.box14Slide = 'off';
+    dataBoxes.box15Slide = 'off';
+    dataBoxes.box16Slide = 'off';
+    dataBoxes.box17Slide = 'off';
+    dataBoxes.box18Slide = 'off';
+    dataBoxes.box19Slide = 'off';
+    
+    if(($(window).width() <= 845)){
+        $box4.css({
+            'text-align': 'center !important',
+            'padding-right': '0px !important'
+        });
+        $box5.css({
+            'text-align': 'center !important',
+            'padding-right': '0px !important'
+        });
+        $box6.css({
+            'text-align': 'center !important',
+            'padding-right': '0px !important'
+        });
+    };
+    
     if($('.active').attr('id') == 'box4'){
         console.log("box4 inactive");
     } else if ($('.active').attr('id') == 'box5'){
         console.log("box5 inactive");
     } else if ($('.active').attr('id') == 'box6'){
-        console.log("box6 inactive");
-        
+        console.log("box6 inactive"); 
     } else if (($('.active').attr('id') == 'box14') && (dataBoxes.box14Slide === 'off')){
         console.log("box14 inactive");
     } else if (($('.active').attr('id') == 'box15') && (dataBoxes.box15Slide === 'off')){
@@ -1114,6 +1150,7 @@ var unShowInfo = function(){
     } else if (($('.active').attr('id') == 'box19') && (dataBoxes.box19Slide === 'off')){
         console.log("box19 inactive");
     }
+    
     $(this).removeClass('active').addClass('inActive');
 };
 
@@ -1236,19 +1273,8 @@ $(function(){
     
     $('#box20').hover(zeroOB,nonZeroOB);
     
-    if(($('.active').attr('id') != 'box4') && ($('.active').attr('id') != 'box5') && ($('.active').attr('id') != 'box6')){
-        $box4.css({
-            'text-align': 'center !important',
-            'padding-right': '0px !important'
-        });
-        $box5.css({
-            'text-align': 'center !important',
-            'padding-right': '0px !important'
-        });
-        $box6.css({
-            'text-align': 'center !important',
-            'padding-right': '0px !important'
-        });
-    };
-
+    $(window).resize(function(){
+        location.reload();
+    });
+          
 });
