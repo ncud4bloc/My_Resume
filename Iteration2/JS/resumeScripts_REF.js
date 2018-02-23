@@ -451,7 +451,7 @@ var addNavStyles = function(bNum,onBox,offBox1,offBox2,onSlide,offSlide1,offSlid
             'background-color': '#ddd',
             'margin-left': '-4px',
             'height': 'auto',
-            'z-index': '10',
+            'z-index': '5',
             'padding-right': '4px'
         });
         
@@ -600,7 +600,7 @@ $(function(){
         console.log('Correctly reading the click');
     // Begin Method 3A: Load HTML Data Using jQuery .load() method
             
-        $('#insert').load("HTML/myDetails.html" + ' #mySkill').hide().fadeIn(3000);
+        $('#insert').load("HTML/myDetails.html" + ' #mySkill').hide().fadeIn(1000);
         
         $('#mySkill').css({
             'position': 'fixed',
