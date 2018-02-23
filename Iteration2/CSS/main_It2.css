@@ -234,21 +234,19 @@ a:visited {
 }
 
 .testItemBox {
+    display: none;
     position: fixed;
-    font-family: "Poiret One", cursive;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: 24px;
     left: 10%;
     top: 250px;
     width: 80%;
     padding-left: 20px;
-    /*margin: 70px auto 10px auto;*/
-    /* overflow: hidden; */
     overflow-y: scroll;
+    overflow-y: auto;
     height: 350px;
     background-color: #e36a12 !important;
-    /*background-color: #fff;*/
-    border-radius: 10px;
+    border-radius: 5px;
     border: 5px solid #ddd;
     opacity: 1,0;
     z-index: 10;
@@ -259,4 +257,15 @@ a:visited {
     padding-top: 25px;
     margin-right: -3px;
     margin-top: -16px;
+}
+
+.closeWin {
+    box-sizing: border-box;
+    width: 150px;
+    font-family: 'Encode Sans Semi Condensed', sans-serif;
+    text-align: center;
+    color: #ddd;
+    background-color: #04181c;
+    margin: 50px auto 15px auto; 
+    border: 2px solid #ddd;
 }

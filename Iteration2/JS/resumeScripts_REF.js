@@ -16,6 +16,7 @@ var dataBoxes = {
     box19Slide : 'off'
 };
 
+var $content = $('content');
 var $box4 = $('#box4');
 var $box5 = $('#box5');
 var $box6 = $('#box6');
@@ -84,7 +85,6 @@ var $b19Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id=
 var $b19Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b19Link1"><p><a href="https://github.com/ncud4bloc/MissileCommand/" target="_blank">Source Code</a></p></div>');
 var $b19Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b19Link2"><p><a href="https://ncud4bloc.github.io/MissileCommand/HTML/indexMC.html" target="_blank">View in Browser</a></p></div>');
 var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b19Desc"><p>Web-based Missile Command classic arcade game generated using jQuery and Canvas.</p></div>');
-
 
 /* -----  Functions  ----- */
 
@@ -596,17 +596,28 @@ $(function(){
     
     /* AJAX Functionality for Detailed Information Div */
     
+    //var $container = $('<div class="containerArea">');
+    //var $testItemBox = $('<div class="testItemBox" id="insert"></div>');
+    //var $closeWin = $('<div class="closeWin"><p>CLOSE &#9746;</p></div>');
+    var $closeWin = $('.closeWin');
+    
     $b4Lynk1.on('click',function(){
         console.log('Correctly reading the click');
-    // Begin Method 3A: Load HTML Data Using jQuery .load() method
-            
+        
+        //$content.append($container);
+        //$container.append($testItemBox);
+        //$container.append($closeWin);
+        
+        $('.testItemBox').css({
+            'display': 'block'
+        });
+    // Load HTML Data Using jQuery .load() method
         $('#insert').load("HTML/myDetails.html" + ' #mySkill').hide().fadeIn(1000);
         
         $('#mySkill').css({
             'position': 'fixed',
             'opacity': '1.0'
-        });    
-    // End Method 3A
+        });  
         
     // Begin Method 3B: Load HTML Data Using jQuery $.ajax() method
         
@@ -636,5 +647,14 @@ $(function(){
     // End Method 3B
     
     });
+    
+    $closeWin.on('click',function(){
+    //$('.closeWin').on('click',function(){
+        $testItemBox.css({
+            'display': 'none'
+        });
+        console.log('Is reading the close command');
+    });
+    
           
 });
