@@ -35,7 +35,8 @@ var $box19ex = $('#box19ex');
 var $box17t19 = $('#box17t19');
 
 var $b4Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Slide"></div>');
-var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p><a href="../HTML/page2.html#mySkills" target="_blank">Developer Skillset</a></p></div>');
+/*var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p><a href="../HTML/page2.html#mySkills" target="_blank">Developer Skillset</a></p></div>');*/
+var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p>Developer Skillset</p></div>');
 var $b4Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk2"><p><a href="../HTML/page2.html#myEducation" target="_blank">Education</a></p></div>');
 var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk3"><p><a href="../HTML/page2.html#myResume" target="_blank">Professional Background</a></p></div>');
 
@@ -46,7 +47,7 @@ var $b5Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" i
 
 var $b6Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Slide"></div>');
 var $b6Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk1"><p><a href="../HTML/page2.html#myPhone" target="_blank">Phone</a></p></div>');
-var $b6Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk2"><p><a href="../HTML/page2.html#myEmail" target="_blank">Email</a></p></div>');
+var $b6Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk2"><p><a href="mailto:ncudden@sbcglobal.net">Email</a></p></div>');
 var $b6Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk3"><p><a href="../HTML/page2.html#myAddress" target="_blank">Address</a></p></div>');
 
 var $b14Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Slide"></div>');
@@ -591,6 +592,49 @@ $(function(){
     
     $(window).resize(function(){
         location.reload();
+    });
+    
+    /* AJAX Functionality for Detailed Information Div */
+    
+    $b4Lynk1.on('click',function(){
+        console.log('Correctly reading the click');
+    // Begin Method 3A: Load HTML Data Using jQuery .load() method
+            
+        $('#insert').load("HTML/myDetails.html" + ' #mySkill').hide().fadeIn(3000);
+        
+        $('#mySkill').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });    
+    // End Method 3A
+        
+    // Begin Method 3B: Load HTML Data Using jQuery $.ajax() method
+        
+            /*$.ajax({
+                type: "GET",
+                url: "HTML/myDetails.html",
+                timeout: 2000,
+                beforeSend: function(){
+                    $('#insert').append('<div id="load">Loading....</div>');
+                    console.log('Loading....');
+                },
+                complete: function(){
+                    $('#load').remove();
+                    console.log('Loading Complete');
+                },
+                success: function(data){
+                    $('#insert').html($(data).find('#mySkill')).hide().fadeIn(3000);    //jQuery .find() doesn't work
+                    //$('#insert').html($(data)).hide().fadeIn(3000);
+                    console.log('Data Transfer Successful');        
+                },
+                error: function(){
+                    $('#insert').html('<div id="eMessage">Error.....file did not load correctly</div>');
+                    console.log('Error Getting Data');
+                }
+            });*/
+        
+    // End Method 3B
+    
     });
           
 });

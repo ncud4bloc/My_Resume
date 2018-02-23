@@ -232,3 +232,20 @@ a:visited {
     padding-top: 5px;
     background-color: #04181c;
 }
+
+.testItemBox {
+    position: fixed;
+    left: 10%;
+    top: 85px;
+    width: 80%;
+    padding-left: 20px;
+    /*margin: 70px auto 10px auto;*/
+    /* overflow: hidden; */
+    overflow-y: scroll;
+    height: 260px;
+    background-color: #e36a12;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 5px solid #ddd;
+    opacity: 1,0;
+}
