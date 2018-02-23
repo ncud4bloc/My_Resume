@@ -266,6 +266,12 @@ a:visited {
     text-align: center;
     color: #ddd;
     background-color: #04181c;
-    margin: 50px auto 15px auto; 
+    margin: 25px auto 15px auto; 
     border: 2px solid #ddd;
+}
+
+#messPar {
+    float:right;
+    padding-right: 10px;
+    margin: 10px auto 0 auto;
 }

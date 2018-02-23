@@ -596,21 +596,15 @@ $(function(){
     
     /* AJAX Functionality for Detailed Information Div */
     
-    //var $container = $('<div class="containerArea">');
-    //var $testItemBox = $('<div class="testItemBox" id="insert"></div>');
-    //var $closeWin = $('<div class="closeWin"><p>CLOSE &#9746;</p></div>');
-    var $closeWin = $('.closeWin');
+    var $button = $('.button');
     
     $b4Lynk1.on('click',function(){
         console.log('Correctly reading the click');
         
-        //$content.append($container);
-        //$container.append($testItemBox);
-        //$container.append($closeWin);
-        
         $('.testItemBox').css({
             'display': 'block'
         });
+        
     // Load HTML Data Using jQuery .load() method
         $('#insert').load("HTML/myDetails.html" + ' #mySkill').hide().fadeIn(1000);
         
@@ -618,42 +612,14 @@ $(function(){
             'position': 'fixed',
             'opacity': '1.0'
         });  
-        
-    // Begin Method 3B: Load HTML Data Using jQuery $.ajax() method
-        
-            /*$.ajax({
-                type: "GET",
-                url: "HTML/myDetails.html",
-                timeout: 2000,
-                beforeSend: function(){
-                    $('#insert').append('<div id="load">Loading....</div>');
-                    console.log('Loading....');
-                },
-                complete: function(){
-                    $('#load').remove();
-                    console.log('Loading Complete');
-                },
-                success: function(data){
-                    $('#insert').html($(data).find('#mySkill')).hide().fadeIn(3000);    //jQuery .find() doesn't work
-                    //$('#insert').html($(data)).hide().fadeIn(3000);
-                    console.log('Data Transfer Successful');        
-                },
-                error: function(){
-                    $('#insert').html('<div id="eMessage">Error.....file did not load correctly</div>');
-                    console.log('Error Getting Data');
-                }
-            });*/
-        
-    // End Method 3B
     
     });
     
-    $closeWin.on('click',function(){
-    //$('.closeWin').on('click',function(){
+    $button.on('click',function(){
+        console.log('Is reading the close command');
         $testItemBox.css({
             'display': 'none'
         });
-        console.log('Is reading the close command');
     });
     
           
