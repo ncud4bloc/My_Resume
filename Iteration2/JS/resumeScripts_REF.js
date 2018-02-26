@@ -34,6 +34,8 @@ var $box17ex = $('#box17ex');
 var $box18ex = $('#box18ex');
 var $box19ex = $('#box19ex');
 var $box17t19 = $('#box17t19');
+var $formbox = $('.formbox');
+var $button = $('.button');
 
 var $b4Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Slide"></div>');
 /*var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p><a href="../HTML/page2.html#mySkills" target="_blank">Developer Skillset</a></p></div>');*/
@@ -596,12 +598,14 @@ $(function(){
     
     /* AJAX Functionality for Detailed Information Div */
     
-    var $button = $('.button');
     
     $b4Lynk1.on('click',function(){
         console.log('Correctly reading the click');
         
         $('.testItemBox').css({
+            'display': 'block'
+        });
+        $formbox.css({
             'display': 'block'
         });
         
@@ -617,7 +621,10 @@ $(function(){
     
     $button.on('click',function(){
         console.log('Is reading the close command');
-        $testItemBox.css({
+        $('.testItemBox').css({
+            'display': 'none'
+        });
+        $formbox.css({
             'display': 'none'
         });
     });

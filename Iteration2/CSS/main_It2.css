@@ -249,7 +249,7 @@ a:visited {
     border-radius: 5px;
     border: 5px solid #ddd;
     opacity: 1,0;
-    z-index: 10;
+    z-index: 8;
 }
 
 .textBG {
@@ -270,8 +270,20 @@ a:visited {
     border: 2px solid #ddd;
 }
 
+.formbox {
+    position: fixed;
+    display: none;
+    width: 100%;
+    top: 602px;
+    /*left: 35%;*/
+    z-index: 10;
+    /*height: 30px;*/
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
 #messPar {
-    float:right;
-    padding-right: 10px;
-    margin: 10px auto 0 auto;
+    /*float:right;
+    padding-right: 10px;*/
+    margin: 0 auto 0 auto;
 }
