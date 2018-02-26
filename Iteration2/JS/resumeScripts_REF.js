@@ -4,6 +4,10 @@
 var pageWidth = ($(window).width());
     console.log('Window width is ' + pageWidth);
 var openBox;
+var $myClick;
+var lockSlide = 'open';
+var $formbox = $('.formbox');
+var $button = $('.button');
 var dataBoxes = {
     box4Slide : 'off',
     box5Slide : 'off',
@@ -34,14 +38,14 @@ var $box17ex = $('#box17ex');
 var $box18ex = $('#box18ex');
 var $box19ex = $('#box19ex');
 var $box17t19 = $('#box17t19');
-var $formbox = $('.formbox');
-var $button = $('.button');
 
 var $b4Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Slide"></div>');
 /*var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p><a href="../HTML/page2.html#mySkills" target="_blank">Developer Skillset</a></p></div>');*/
 var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p>Developer Skillset</p></div>');
-var $b4Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk2"><p><a href="../HTML/page2.html#myEducation" target="_blank">Education</a></p></div>');
-var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk3"><p><a href="../HTML/page2.html#myResume" target="_blank">Professional Background</a></p></div>');
+/*var $b4Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk2"><p><a href="../HTML/page2.html#myEducation" target="_blank">Education</a></p></div>');*/
+var $b4Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk2"><p>Education</p></div>');
+/*var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk3"><p><a href="../HTML/page2.html#myResume" target="_blank">Professional Background</a></p></div>');*/
+var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk3"><p>Professional Background</p></div>');
 
 var $b5Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Slide"></div>');
 var $b5Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk1"><p><a href="../HTML/page2.html#myPersonalBackground" target="_blank">Background</a></p></div>');
@@ -93,20 +97,20 @@ var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" 
 
 var showInfo = function(){
     $(this).removeClass('inActive').addClass('active');
-    if(($('.active').attr('id') == 'box4') && (openBox != 4)){
+    if(($('.active').attr('id') == 'box4') && (openBox != 4) && (lockSlide === 'open')){
         console.log("box4 active");
         openBox = 4;
         addNavStyles(1,$box4,$box5,$box6,$b4Slide,$b5Slide,$b6Slide,$b4Lynk1,$b4Lynk2,$b4Lynk3);
-    } else if (($('.active').attr('id') == 'box5') && (openBox != 5)){
+    } else if (($('.active').attr('id') == 'box5') && (openBox != 5) && (lockSlide === 'open')){
         console.log("box5 active");
         openBox = 5;
         addNavStyles(2,$box5,$box4,$box6,$b5Slide,$b4Slide,$b6Slide,$b5Lynk1,$b5Lynk2,$b5Lynk3);  
-    } else if (($('.active').attr('id') == 'box6') && (openBox != 6)){
+    } else if (($('.active').attr('id') == 'box6') && (openBox != 6) && (lockSlide === 'open')){
         console.log("box6 active");
         openBox = 6;
         addNavStyles(3,$box6,$box4,$box5,$b6Slide,$b4Slide,$b5Slide,$b6Lynk1,$b6Lynk2,$b6Lynk3);
         
-    } else if (($('.active').attr('id') == 'box14') && (openBox != 14) && (dataBoxes.box14Slide === 'off')){
+    } else if (($('.active').attr('id') == 'box14') && (openBox != 14) && (dataBoxes.box14Slide === 'off') && (lockSlide === 'open')){
         console.log("box14 active");
         openBox = 14;
         dataBoxes.box14Slide = 'on';
@@ -117,7 +121,7 @@ var showInfo = function(){
         dataBoxes.box19Slide = 'off';
         addProjStyles($box14,$box14t16,$b14Slide,$box14ex,$b14Title,$b14Link1,'empty',$b14Desc,$b15Slide,$b16Slide,$b17Slide,$b18Slide,$b19Slide,$box15,$box16,$box17,$box18,$box19);
         
-    } else if (($('.active').attr('id') == 'box15') && (openBox != 15) && (dataBoxes.box15Slide === 'off')){
+    } else if (($('.active').attr('id') == 'box15') && (openBox != 15) && (dataBoxes.box15Slide === 'off') && (lockSlide === 'open')){
         console.log("box15 active");
         openBox = 15;
         dataBoxes.box14Slide = 'off';
@@ -128,7 +132,7 @@ var showInfo = function(){
         dataBoxes.box19Slide = 'off';
         addProjStyles($box15,$box14t16,$b15Slide,$box15ex,$b15Title,$b15Link1,$b15Link2,$b15Desc,$b14Slide,$b16Slide,$b17Slide,$b18Slide,$b19Slide,$box14,$box16,$box17,$box18,$box19);
         
-    } else if (($('.active').attr('id') == 'box16') && (openBox != 16) && (dataBoxes.box16Slide === 'off')){
+    } else if (($('.active').attr('id') == 'box16') && (openBox != 16) && (dataBoxes.box16Slide === 'off') && (lockSlide === 'open')){
         console.log("box16 active");
         openBox = 16;
         dataBoxes.box14Slide = 'off';
@@ -139,7 +143,7 @@ var showInfo = function(){
         dataBoxes.box19Slide = 'off';
         addProjStyles($box16,$box14t16,$b16Slide,$box16ex,$b16Title,$b16Link1,$b16Link2,$b16Desc,$b14Slide,$b15Slide,$b17Slide,$b18Slide,$b19Slide,$box14,$box15,$box17,$box18,$box19);
       
-    } else if (($('.active').attr('id') == 'box17') && (openBox != 17) && (dataBoxes.box17Slide === 'off')){
+    } else if (($('.active').attr('id') == 'box17') && (openBox != 17) && (dataBoxes.box17Slide === 'off') && (lockSlide === 'open')){
         console.log("box17 active");
         openBox = 17;
         dataBoxes.box14Slide = 'off';
@@ -150,7 +154,7 @@ var showInfo = function(){
         dataBoxes.box19Slide = 'off';
         addProjStyles($box17,$box17t19,$b17Slide,$box17ex,$b17Title,$b17Link1,$b17Link2,$b17Desc,$b14Slide,$b15Slide,$b16Slide,$b18Slide,$b19Slide,$box14,$box15,$box16,$box18,$box19);
         
-    } else if (($('.active').attr('id') == 'box18') && (openBox != 18) && (dataBoxes.box18Slide === 'off')){
+    } else if (($('.active').attr('id') == 'box18') && (openBox != 18) && (dataBoxes.box18Slide === 'off') && (lockSlide === 'open')){
         console.log("box18 active");
         openBox = 18;
         dataBoxes.box14Slide = 'off';
@@ -161,7 +165,7 @@ var showInfo = function(){
         dataBoxes.box19Slide = 'off';
         addProjStyles($box18,$box17t19,$b18Slide,$box18ex,$b18Title,$b18Link1,$b18Link2,$b18Desc,$b14Slide,$b15Slide,$b16Slide,$b17Slide,$b19Slide,$box14,$box15,$box16,$box17,$box19);
         
-    } else if (($('.active').attr('id') == 'box19') && (openBox != 19) && (dataBoxes.box19Slide === 'off')){
+    } else if (($('.active').attr('id') == 'box19') && (openBox != 19) && (dataBoxes.box19Slide === 'off') && (lockSlide === 'open')){
         console.log("box19 active");
         openBox = 19;
         dataBoxes.box14Slide = 'off';
@@ -573,6 +577,42 @@ var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,o
         onSlide.slideDown(500);
 };
 
+var setInfo = function(){
+        console.log('Correctly reading the click');
+        lockSlide = 'locked';        
+        $('.testItemBox').css({
+            'display': 'block'
+        });
+        $formbox.css({
+            'display': 'block'
+        });
+        $formbox.hide().fadeIn(1700);
+    
+        if($(this).attr('id') == 'box4'){
+            $b4Slide.css({
+                'display': 'none'
+            });
+            $box4.css({
+                'background-color': '#04181c'
+            });    
+        } else if($(this).attr('id') == 'box5'){
+            $b5Slide.css({
+                'display': 'none'
+            });
+            $box5.css({
+                'background-color': '#04181c'
+            }); 
+        } else if($(this).attr('id') == 'box6'){
+            $b6Slide.css({
+                'display': 'none'
+            });
+            $box6.css({
+                'background-color': '#04181c'
+            }); 
+        } 
+        
+};
+
 
 /* -----  Function Calls  ----- */
 
@@ -596,37 +636,47 @@ $(function(){
         location.reload();
     });
     
-    /* AJAX Functionality for Detailed Information Div */
-    
-    
+    // AJAX Functionality for Detailed Information Div
     $b4Lynk1.on('click',function(){
-        console.log('Correctly reading the click');
-        
-        $('.testItemBox').css({
-            'display': 'block'
-        });
-        $formbox.css({
-            'display': 'block'
-        });
-        
-    // Load HTML Data Using jQuery .load() method
-        $('#insert').load("HTML/myDetails.html" + ' #mySkill').hide().fadeIn(1000);
-        
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #mySkill').hide().fadeIn(1500);
         $('#mySkill').css({
             'position': 'fixed',
             'opacity': '1.0'
         });  
-    
+    });
+    $b4Lynk2.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myEd').hide().fadeIn(1500);
+        $('#myEd').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });
+    });
+    $b4Lynk3.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myBG').hide().fadeIn(1500);
+        $('#myBG').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });  
     });
     
     $button.on('click',function(){
         console.log('Is reading the close command');
+        lockSlide = 'open';
         $('.testItemBox').css({
             'display': 'none'
         });
         $formbox.css({
             'display': 'none'
         });
+        /*$b4Slide.css({
+            'display': 'block'
+        });*/
     });
     
           
