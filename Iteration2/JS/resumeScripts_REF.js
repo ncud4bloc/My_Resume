@@ -42,20 +42,19 @@ var $box17t19 = $('#box17t19');
 var $b4Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Slide"></div>');
 /*var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p><a href="../HTML/page2.html#mySkills" target="_blank">Developer Skillset</a></p></div>');*/
 var $b4Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk1"><p>Developer Skillset</p></div>');
-/*var $b4Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk2"><p><a href="../HTML/page2.html#myEducation" target="_blank">Education</a></p></div>');*/
 var $b4Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk2"><p>Education</p></div>');
-/*var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk3"><p><a href="../HTML/page2.html#myResume" target="_blank">Professional Background</a></p></div>');*/
 var $b4Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b4Lynk3"><p>Professional Background</p></div>');
 
 var $b5Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Slide"></div>');
-var $b5Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk1"><p><a href="../HTML/page2.html#myPersonalBackground" target="_blank">Background</a></p></div>');
-var $b5Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk2"><p><a href="../HTML/page2.html#myFamily" target="_blank">Family</a></p></div>');
-var $b5Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk3"><p><a href="../HTML/page2.html#myHobbies" target="_blank">Hobbies</a></p></div>');
+/*var $b5Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk1"><p><a href="../HTML/page2.html#myPersonalBackground" target="_blank">Background</a></p></div>');*/
+var $b5Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk1"><p>Background</p></div>');
+var $b5Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk2"><p>Family</p></div>');
+var $b5Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b5Lynk3"><p>Hobbies</p></div>');
 
 var $b6Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Slide"></div>');
-var $b6Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk1"><p><a href="../HTML/page2.html#myPhone" target="_blank">Phone</a></p></div>');
+var $b6Lynk1 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk1"><p>Phone</p></div>');
 var $b6Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk2"><p><a href="mailto:ncudden@sbcglobal.net">Email</a></p></div>');
-var $b6Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk3"><p><a href="../HTML/page2.html#myAddress" target="_blank">Address</a></p></div>');
+var $b6Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk3"><p>Address</p></div>');
 
 var $b14Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Slide"></div>');
 var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p>Ruby Hangman:</p></div>');
@@ -660,6 +659,62 @@ $(function(){
         // Load HTML Data Using jQuery .load() method
         $('#insert').load("HTML/myDetails.html" + ' #myBG').hide().fadeIn(1500);
         $('#myBG').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });  
+    });
+    
+    $b5Lynk1.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myPBG').hide().fadeIn(1500);
+        $('#myPBG').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });  
+    });
+    $b5Lynk2.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myFam').hide().fadeIn(1500);
+        $('#myFam').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });
+    });
+    $b5Lynk3.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myFun').hide().fadeIn(1500);
+        $('#myFun').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });  
+    });
+    
+    $b6Lynk1.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myPH').hide().fadeIn(1500);
+        $('#myPH').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });  
+    });
+    /*$b6Lynk2.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myEd').hide().fadeIn(1500);
+        $('#myEd').css({
+            'position': 'fixed',
+            'opacity': '1.0'
+        });
+    });*/
+    $b6Lynk3.on('click',function(){
+        setInfo();
+        // Load HTML Data Using jQuery .load() method
+        $('#insert').load("HTML/myDetails.html" + ' #myHM').hide().fadeIn(1500);
+        $('#myHM').css({
             'position': 'fixed',
             'opacity': '1.0'
         });  

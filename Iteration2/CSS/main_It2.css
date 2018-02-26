@@ -238,8 +238,9 @@ a:visited {
     position: fixed;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: 24px;
-    left: 10%;
+    /*left: 10%;*/
     top: 250px;
+    top: 243px;
     width: 80%;
     padding-left: 20px;
     overflow-y: scroll;
