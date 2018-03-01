@@ -94,87 +94,7 @@ var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" 
 
 var showInfo = function(){
     $(this).removeClass('inActive').addClass('active');
-    if(($('.active').attr('id') == 'box4') && (openBox != 4) && (lockSlide === 'open')){
-        console.log("box4 active");
-        openBox = 4;
-        addNavStyles(1,$box4,$box5,$box6,$b4Slide,$b5Slide,$b6Slide,$b4Lynk1,$b4Lynk2,$b4Lynk3);
-    } else if (($('.active').attr('id') == 'box5') && (openBox != 5) && (lockSlide === 'open')){
-        console.log("box5 active");
-        openBox = 5;
-        addNavStyles(2,$box5,$box4,$box6,$b5Slide,$b4Slide,$b6Slide,$b5Lynk1,$b5Lynk2,$b5Lynk3);  
-    } else if (($('.active').attr('id') == 'box6') && (openBox != 6) && (lockSlide === 'open')){
-        console.log("box6 active");
-        openBox = 6;
-        addNavStyles(3,$box6,$box4,$box5,$b6Slide,$b4Slide,$b5Slide,$b6Lynk1,$b6Lynk2,$b6Lynk3);
-        
-    } else if (($('.active').attr('id') == 'box14') && (openBox != 14) && (dataBoxes.box14Slide === 'off') && (lockSlide === 'open')){
-        console.log("box14 active");
-        openBox = 14;
-        dataBoxes.box14Slide = 'on';
-        dataBoxes.box15Slide = 'off';
-        dataBoxes.box16Slide = 'off';
-        dataBoxes.box17Slide = 'off';
-        dataBoxes.box18Slide = 'off';
-        dataBoxes.box19Slide = 'off';
-        addProjStyles($box14,$box14t16,$b14Slide,$box14ex,$b14Title,$b14Link1,'empty',$b14Desc,$b15Slide,$b16Slide,$b17Slide,$b18Slide,$b19Slide,$box15,$box16,$box17,$box18,$box19);
-        
-    } else if (($('.active').attr('id') == 'box15') && (openBox != 15) && (dataBoxes.box15Slide === 'off') && (lockSlide === 'open')){
-        console.log("box15 active");
-        openBox = 15;
-        dataBoxes.box14Slide = 'off';
-        dataBoxes.box15Slide = 'on';
-        dataBoxes.box16Slide = 'off';
-        dataBoxes.box17Slide = 'off';
-        dataBoxes.box18Slide = 'off';
-        dataBoxes.box19Slide = 'off';
-        addProjStyles($box15,$box14t16,$b15Slide,$box15ex,$b15Title,$b15Link1,$b15Link2,$b15Desc,$b14Slide,$b16Slide,$b17Slide,$b18Slide,$b19Slide,$box14,$box16,$box17,$box18,$box19);
-        
-    } else if (($('.active').attr('id') == 'box16') && (openBox != 16) && (dataBoxes.box16Slide === 'off') && (lockSlide === 'open')){
-        console.log("box16 active");
-        openBox = 16;
-        dataBoxes.box14Slide = 'off';
-        dataBoxes.box15Slide = 'off';
-        dataBoxes.box16Slide = 'on';
-        dataBoxes.box17Slide = 'off';
-        dataBoxes.box18Slide = 'off';
-        dataBoxes.box19Slide = 'off';
-        addProjStyles($box16,$box14t16,$b16Slide,$box16ex,$b16Title,$b16Link1,$b16Link2,$b16Desc,$b14Slide,$b15Slide,$b17Slide,$b18Slide,$b19Slide,$box14,$box15,$box17,$box18,$box19);
-      
-    } else if (($('.active').attr('id') == 'box17') && (openBox != 17) && (dataBoxes.box17Slide === 'off') && (lockSlide === 'open')){
-        console.log("box17 active");
-        openBox = 17;
-        dataBoxes.box14Slide = 'off';
-        dataBoxes.box15Slide = 'off';
-        dataBoxes.box16Slide = 'off';
-        dataBoxes.box17Slide = 'on';
-        dataBoxes.box18Slide = 'off';
-        dataBoxes.box19Slide = 'off';
-        addProjStyles($box17,$box17t19,$b17Slide,$box17ex,$b17Title,$b17Link1,$b17Link2,$b17Desc,$b14Slide,$b15Slide,$b16Slide,$b18Slide,$b19Slide,$box14,$box15,$box16,$box18,$box19);
-        
-    } else if (($('.active').attr('id') == 'box18') && (openBox != 18) && (dataBoxes.box18Slide === 'off') && (lockSlide === 'open')){
-        console.log("box18 active");
-        openBox = 18;
-        dataBoxes.box14Slide = 'off';
-        dataBoxes.box15Slide = 'off';
-        dataBoxes.box16Slide = 'off';
-        dataBoxes.box17Slide = 'off';
-        dataBoxes.box18Slide = 'on';
-        dataBoxes.box19Slide = 'off';
-        addProjStyles($box18,$box17t19,$b18Slide,$box18ex,$b18Title,$b18Link1,$b18Link2,$b18Desc,$b14Slide,$b15Slide,$b16Slide,$b17Slide,$b19Slide,$box14,$box15,$box16,$box17,$box19);
-        
-    } else if (($('.active').attr('id') == 'box19') && (openBox != 19) && (dataBoxes.box19Slide === 'off') && (lockSlide === 'open')){
-        console.log("box19 active");
-        openBox = 19;
-        dataBoxes.box14Slide = 'off';
-        dataBoxes.box15Slide = 'off';
-        dataBoxes.box16Slide = 'off';
-        dataBoxes.box17Slide = 'off';
-        dataBoxes.box18Slide = 'off';
-        dataBoxes.box19Slide = 'on';
-        addProjStyles($box19,$box17t19,$b19Slide,$box19ex,$b19Title,$b19Link1,$b19Link2,$b19Desc,$b14Slide,$b15Slide,$b16Slide,$b17Slide,$b18Slide,$box14,$box15,$box16,$box17,$box18);
-        
-    }
-    
+    updateStyles();
 };
 
 var unShowInfo = function(){
@@ -219,16 +139,22 @@ var unShowInfo = function(){
     $(this).removeClass('active').addClass('inActive');
 };
 
-var showClkInfo = function(){
-    e = window.event;
-    var el = e.target;
-    elID = el.getAttribute('id');
-    console.log('Box click active selected box: ' + elID);
-    if($('.active').attr('id') == 'box4'){
-        $(this).removeClass('active').addClass('inActive');
-        console.log('Class changed to inActive for click');
-        showInfo();
-    }
+var deActivate = function(){
+    $('#box4').removeClass('active').addClass('inActive');
+    $('#box5').removeClass('active').addClass('inActive');
+    $('#box6').removeClass('active').addClass('inActive');
+    $('#box14').removeClass('active').addClass('inActive');
+    $('#box15').removeClass('active').addClass('inActive');
+    $('#box16').removeClass('active').addClass('inActive');
+    $('#box17').removeClass('active').addClass('inActive');
+    $('#box18').removeClass('active').addClass('inActive');
+    $('#box19').removeClass('active').addClass('inActive');
+};
+
+var showClkInfo = function(onClk){
+    deActivate();
+    onClk.removeClass('inActive').addClass('active');
+    updateStyles();
 };
 
 var zeroOB = function(){
@@ -325,6 +251,89 @@ var zeroOB = function(){
 
 var nonZeroOB = function(){
     console.log('Slide Downs ready to display');
+};
+
+var updateStyles = function(){
+    if(($('.active').attr('id') == 'box4') && (openBox != 4) && (lockSlide === 'open')){
+        console.log("box4 active");
+        openBox = 4;
+        addNavStyles(1,$box4,$box5,$box6,$b4Slide,$b5Slide,$b6Slide,$b4Lynk1,$b4Lynk2,$b4Lynk3);
+    } else if (($('.active').attr('id') == 'box5') && (openBox != 5) && (lockSlide === 'open')){
+        console.log("box5 active");
+        openBox = 5;
+        addNavStyles(2,$box5,$box4,$box6,$b5Slide,$b4Slide,$b6Slide,$b5Lynk1,$b5Lynk2,$b5Lynk3);  
+    } else if (($('.active').attr('id') == 'box6') && (openBox != 6) && (lockSlide === 'open')){
+        console.log("box6 active");
+        openBox = 6;
+        addNavStyles(3,$box6,$box4,$box5,$b6Slide,$b4Slide,$b5Slide,$b6Lynk1,$b6Lynk2,$b6Lynk3);
+        
+    } else if (($('.active').attr('id') == 'box14') && (openBox != 14) && (dataBoxes.box14Slide === 'off') && (lockSlide === 'open')){
+        console.log("box14 active");
+        openBox = 14;
+        dataBoxes.box14Slide = 'on';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'off';
+        addProjStyles($box14,$box14t16,$b14Slide,$box14ex,$b14Title,$b14Link1,'empty',$b14Desc,$b15Slide,$b16Slide,$b17Slide,$b18Slide,$b19Slide,$box15,$box16,$box17,$box18,$box19);
+        
+    } else if (($('.active').attr('id') == 'box15') && (openBox != 15) && (dataBoxes.box15Slide === 'off') && (lockSlide === 'open')){
+        console.log("box15 active");
+        openBox = 15;
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'on';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'off';
+        addProjStyles($box15,$box14t16,$b15Slide,$box15ex,$b15Title,$b15Link1,$b15Link2,$b15Desc,$b14Slide,$b16Slide,$b17Slide,$b18Slide,$b19Slide,$box14,$box16,$box17,$box18,$box19);
+        
+    } else if (($('.active').attr('id') == 'box16') && (openBox != 16) && (dataBoxes.box16Slide === 'off') && (lockSlide === 'open')){
+        console.log("box16 active");
+        openBox = 16;
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'on';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'off';
+        addProjStyles($box16,$box14t16,$b16Slide,$box16ex,$b16Title,$b16Link1,$b16Link2,$b16Desc,$b14Slide,$b15Slide,$b17Slide,$b18Slide,$b19Slide,$box14,$box15,$box17,$box18,$box19);
+      
+    } else if (($('.active').attr('id') == 'box17') && (openBox != 17) && (dataBoxes.box17Slide === 'off') && (lockSlide === 'open')){
+        console.log("box17 active");
+        openBox = 17;
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'on';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'off';
+        addProjStyles($box17,$box17t19,$b17Slide,$box17ex,$b17Title,$b17Link1,$b17Link2,$b17Desc,$b14Slide,$b15Slide,$b16Slide,$b18Slide,$b19Slide,$box14,$box15,$box16,$box18,$box19);
+        
+    } else if (($('.active').attr('id') == 'box18') && (openBox != 18) && (dataBoxes.box18Slide === 'off') && (lockSlide === 'open')){
+        console.log("box18 active");
+        openBox = 18;
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'on';
+        dataBoxes.box19Slide = 'off';
+        addProjStyles($box18,$box17t19,$b18Slide,$box18ex,$b18Title,$b18Link1,$b18Link2,$b18Desc,$b14Slide,$b15Slide,$b16Slide,$b17Slide,$b19Slide,$box14,$box15,$box16,$box17,$box19);
+        
+    } else if (($('.active').attr('id') == 'box19') && (openBox != 19) && (dataBoxes.box19Slide === 'off') && (lockSlide === 'open')){
+        console.log("box19 active");
+        openBox = 19;
+        dataBoxes.box14Slide = 'off';
+        dataBoxes.box15Slide = 'off';
+        dataBoxes.box16Slide = 'off';
+        dataBoxes.box17Slide = 'off';
+        dataBoxes.box18Slide = 'off';
+        dataBoxes.box19Slide = 'on';
+        addProjStyles($box19,$box17t19,$b19Slide,$box19ex,$b19Title,$b19Link1,$b19Link2,$b19Desc,$b14Slide,$b15Slide,$b16Slide,$b17Slide,$b18Slide,$box14,$box15,$box16,$box17,$box18);
+        
+    }
 };
 
 var addNavStyles = function(bNum,onBox,offBox1,offBox2,onSlide,offSlide1,offSlide2,onLynk1,onLynk2,onLynk3){
@@ -627,10 +636,6 @@ var setInfo = function(){
 
 $(function(){
     
-    /*$('#box4').on('click',function(){
-        showClkInfo();
-    });*/
-    
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('#box1').on('click',function(){
             zeroOB();
@@ -642,34 +647,34 @@ $(function(){
             zeroOB();
         });
         $('#box4').on('click',function(){
-            showClkInfo();
+            showClkInfo($box4);
         });
         $('#box5').on('click',function(){
-            showClkInfo();
+            showClkInfo($box5);
         });
         $('#box6').on('click',function(){
-            showClkInfo();
+            showClkInfo($box6);
         });
         $('#box7').on('click',function(){
             zeroOB();
         });
         $('#box14').on('click',function(){
-            showClkInfo();
+            showClkInfo($box14);
         });
         $('#box15').on('click',function(){
-            showClkInfo();
+            showClkInfo($box15);
         });
         $('#box16').on('click',function(){
-            showClkInfo();
+            showClkInfo($box16);
         });
         $('#box17').on('click',function(){
-            showClkInfo();
+            showClkInfo($box17);
         });
         $('#box18').on('click',function(){
-            showClkInfo();
+            showClkInfo($box18);
         });
         $('#box19').on('click',function(){
-            showClkInfo();
+            showClkInfo($box19);
         });
         $('#box20').on('click',function(){
             zeroOB();
