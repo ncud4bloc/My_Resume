@@ -15,19 +15,14 @@
     border-left: 2px solid #ddd;
 }
 
-/*#box13 {
-    margin-top: 40px;
-}*/
-
 #box14, #box17 {
     border-left: 0px solid #04181c; 
 }
 
-#box16, #box18 {
+/*#box16, #box18 {
     clear: left;
-}
+}*/
 
 .projBox {
-    width: 50%;
     width: 100%;
 }
