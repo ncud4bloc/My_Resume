@@ -81,7 +81,7 @@ var $b18Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage"
 var $b18Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b18Title"><p class="bHdg">Google Map:</p></div>');
 var $b18Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b18Link1"><p><a href="https://github.com/ncud4bloc/GoogleMaps/" target="_blank">Source Code</a></p></div>');
 var $b18Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b18Link2"><p><a href="https://ncud4bloc.github.io/GoogleMaps/HTML/indexGM.html" target="_blank">View in Browser</a></p></div>');
-var $b18Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b18Desc"><p>A simple responsive website incorporating the Google Maps API. Enter a location in decimal degrees along with a marker message (how about 40.6892, -74.0445, Lady Liberty for starters?)</p></div>');
+var $b18Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b18Desc"><p>A simple responsive website incorporating the Google Maps API. Enter a location in decimal degrees along with a marker message (how about 37.3345, -122.009, "To Infinity!" for starters?)</p></div>');
 
 var $b19Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b19Slide"></div>');
 var $b19Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b19Title"><p class="bHdg">Missile Command:</p></div>');
@@ -597,7 +597,8 @@ var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,o
 
 var setInfo = function(){
         console.log('Correctly reading the click');
-        lockSlide = 'locked';        
+        lockSlide = 'locked'; 
+        zeroOB();
         $('.testItemBox').css({
             'display': 'block'
         });
@@ -605,30 +606,6 @@ var setInfo = function(){
             'display': 'block'
         });
         $formbox.hide().fadeIn(1700);
-    
-        if($(this).attr('id') == 'box4'){
-            $b4Slide.css({
-                'display': 'none'
-            });
-            $box4.css({
-                'background-color': '#04181c'
-            });    
-        } else if($(this).attr('id') == 'box5'){
-            $b5Slide.css({
-                'display': 'none'
-            });
-            $box5.css({
-                'background-color': '#04181c'
-            }); 
-        } else if($(this).attr('id') == 'box6'){
-            $b6Slide.css({
-                'display': 'none'
-            });
-            $box6.css({
-                'background-color': '#04181c'
-            }); 
-        } 
-        
 };
 
 
