@@ -14,7 +14,6 @@ body {
 #content {
     width: 100%;
     height: 850px;
-    /*height: auto;*/
     background-color: #04181c;
     border: 2px solid #04181c;
 }
@@ -83,6 +82,7 @@ body {
     padding-right: 0px;
     padding-top: 16px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 #box6 {
@@ -108,12 +108,6 @@ body {
     padding-left: 10px;
     text-align: left;
 }
-
-/*@media (max-width: 892px) {  
-  #box13 {
-    margin-top: 50px !important;
-  }
-}*/
 
 @media (max-width: 768px) {  
   .hdrImages2, .hdrImages3 {
@@ -219,9 +213,26 @@ body {
     /*margin-left: 3px !important;*/
 }
 
+[id*="Lynk"]:hover {
+    color: #ad0cad;
+    text-decoration-color: #ad0cad;
+    cursor: pointer;
+}
+
+b6Lynk2:hover {
+    color: #ad0cad;
+    text-decoration-color: #ad0cad;
+}
+
 a:link {
     color: #000;
     text-decoration-color: #000;
+}
+
+a:hover {
+    color: #ad0cad;
+    text-decoration-color: #ad0cad;
+    cursor: pointer;
 }
 
 a:visited {
@@ -245,23 +256,17 @@ a:visited {
     position: fixed;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: 24px;
-    /*left: 10%;*/
-    top: 266px;
     top: 69px;
     left: 2%;
     width: 96%;
     padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 40px;
-    overflow-y: scroll;
     overflow-y: auto;
-    height: 350px;
     height: 550px;
     background-color: #e36a12 !important;
-    /*background-color: #ddd !important;*/
     border-radius: 5px;
     border: 5px solid #ddd;
-    /*border: 5px solid #04181c;*/
     opacity: 1,0;
     z-index: 8;
     margin: 0 auto 0 auto;
@@ -272,7 +277,6 @@ a:visited {
     padding-top: 55px;
     margin-right: -3px;
     margin-top: -16px;
-    font-family: "Poiret One", cursive;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -305,18 +309,14 @@ a:visited {
     position: fixed;
     display: none;
     width: 100%;
-    top: 602px;
     top: 25px;
     /*left: 35%;*/
     z-index: 10;
-    /*height: 30px;*/
     margin: 0 auto 0 auto;
     text-align: center;
 }
 
 #messPar {
-    /*float:right;
-    padding-right: 10px;*/
     margin: 60px auto 0 auto;
 }
 
@@ -329,5 +329,4 @@ a:visited {
     border: 2px solid #04181c;
     float: right;
     margin-right: 45px;
-    /*font-family: "Poiret One";*/
 }
