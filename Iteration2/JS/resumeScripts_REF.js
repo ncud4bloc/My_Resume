@@ -598,6 +598,7 @@ var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,o
 var setInfo = function(){
         console.log('Correctly reading the click');
         lockSlide = 'locked'; 
+        $('body').addClass('stop-scrolling');
         zeroOB();
         $('.testItemBox').css({
             'display': 'block'
@@ -672,9 +673,15 @@ $(function(){
         $('#box20').hover(zeroOB,nonZeroOB);
     }
     
-    $(window).resize(function(){
+    /*$(window).resize(function(){
         location.reload();
-    });
+    });*/
+    
+    if(lockSlide == 'locked'){
+        $(window).resize(function(){
+            location.reload();
+        });
+    }
     
     // AJAX Functionality for Detailed Information Div
     $b4Lynk1.on('click',function(){
@@ -752,6 +759,7 @@ $(function(){
     $button.on('click',function(){
         console.log('Is reading the close command');
         lockSlide = 'open';
+        $('body').removeClass('stop-scrolling');
         $('.testItemBox').css({
             'display': 'none'
         });
