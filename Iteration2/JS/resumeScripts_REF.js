@@ -222,8 +222,8 @@ var unShowInfo = function(){
 var showClkInfo = function(){
     e = window.event;
     var el = e.target;
-    //console.log('Box click active ' + $('el').text);
-    console.log('Box click active ' + el.innerHTML);
+    elID = el.getAttribute('id');
+    console.log('Box click active selected box: ' + elID);
     if($('.active').attr('id') == 'box4'){
         $(this).removeClass('active').addClass('inActive');
         console.log('Class changed to inActive for click');
@@ -627,6 +627,9 @@ var setInfo = function(){
 
 $(function(){
     
+    /*$('#box4').on('click',function(){
+        showClkInfo();
+    });*/
     
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $('#box1').on('click',function(){
