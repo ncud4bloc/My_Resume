@@ -219,6 +219,18 @@ var unShowInfo = function(){
     $(this).removeClass('active').addClass('inActive');
 };
 
+var showClkInfo = function(){
+    e = window.event;
+    var el = e.target;
+    //console.log('Box click active ' + $('el').text);
+    console.log('Box click active ' + el.innerHTML);
+    if($('.active').attr('id') == 'box4'){
+        $(this).removeClass('active').addClass('inActive');
+        console.log('Class changed to inActive for click');
+        showInfo();
+    }
+};
+
 var zeroOB = function(){
     openBox = 0;
     $box4.css({
@@ -464,7 +476,7 @@ var addNavStyles = function(bNum,onBox,offBox1,offBox2,onSlide,offSlide1,offSlid
         
         onLynk3.css({
             'margin-top': '-15px',
-            'margin-bottom': '10px'
+            'margin-bottom': '20px'
         });
         
         onSlide.slideUp(0);
@@ -615,19 +627,65 @@ var setInfo = function(){
 
 $(function(){
     
-    $('#box1').hover(zeroOB,nonZeroOB);
-    $('#box3').hover(zeroOB,nonZeroOB);
-    $('#box4').hover(showInfo,unShowInfo);
-    $('#box5').hover(showInfo,unShowInfo);
-    $('#box6').hover(showInfo,unShowInfo);
-    $('#box7').hover(zeroOB,nonZeroOB);
-    $('#box14').hover(showInfo,unShowInfo);
-    $('#box15').hover(showInfo,unShowInfo);
-    $('#box16').hover(showInfo,unShowInfo);
-    $('#box17').hover(showInfo,unShowInfo);
-    $('#box18').hover(showInfo,unShowInfo);
-    $('#box19').hover(showInfo,unShowInfo);
-    $('#box20').hover(zeroOB,nonZeroOB);
+    
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $('#box1').on('click',function(){
+            zeroOB();
+        });
+        $('#box2').on('click',function(){
+            zeroOB();
+        });
+        $('#box3').on('click',function(){
+            zeroOB();
+        });
+        $('#box4').on('click',function(){
+            showClkInfo();
+        });
+        $('#box5').on('click',function(){
+            showClkInfo();
+        });
+        $('#box6').on('click',function(){
+            showClkInfo();
+        });
+        $('#box7').on('click',function(){
+            zeroOB();
+        });
+        $('#box14').on('click',function(){
+            showClkInfo();
+        });
+        $('#box15').on('click',function(){
+            showClkInfo();
+        });
+        $('#box16').on('click',function(){
+            showClkInfo();
+        });
+        $('#box17').on('click',function(){
+            showClkInfo();
+        });
+        $('#box18').on('click',function(){
+            showClkInfo();
+        });
+        $('#box19').on('click',function(){
+            showClkInfo();
+        });
+        $('#box20').on('click',function(){
+            zeroOB();
+        });
+    } else {
+        $('#box1').hover(zeroOB,nonZeroOB);
+        $('#box3').hover(zeroOB,nonZeroOB);
+        $('#box4').hover(showInfo,unShowInfo);
+        $('#box5').hover(showInfo,unShowInfo);
+        $('#box6').hover(showInfo,unShowInfo);
+        $('#box7').hover(zeroOB,nonZeroOB);
+        $('#box14').hover(showInfo,unShowInfo);
+        $('#box15').hover(showInfo,unShowInfo);
+        $('#box16').hover(showInfo,unShowInfo);
+        $('#box17').hover(showInfo,unShowInfo);
+        $('#box18').hover(showInfo,unShowInfo);
+        $('#box19').hover(showInfo,unShowInfo);
+        $('#box20').hover(zeroOB,nonZeroOB);
+    }
     
     $(window).resize(function(){
         location.reload();
@@ -668,7 +726,7 @@ $(function(){
         $('#myPBG').css({
             'position': 'fixed',
             'opacity': '1.0'
-        });  
+        });
     });
     $b5Lynk2.on('click',function(){
         setInfo();
@@ -686,7 +744,7 @@ $(function(){
         $('#myFun').css({
             'position': 'fixed',
             'opacity': '1.0'
-        });  
+        });
     });
     $b6Lynk1.on('click',function(){
         setInfo();
@@ -695,7 +753,7 @@ $(function(){
         $('#myPH').css({
             'position': 'fixed',
             'opacity': '1.0'
-        });  
+        });
     });
     $b6Lynk3.on('click',function(){
         setInfo();
@@ -704,7 +762,7 @@ $(function(){
         $('#myHM').css({
             'position': 'fixed',
             'opacity': '1.0'
-        });  
+        });
     });
     $button.on('click',function(){
         console.log('Is reading the close command');
