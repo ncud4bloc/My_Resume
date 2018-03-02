@@ -101,6 +101,10 @@ var unShowInfo = function(){
     
     openBox = 0;
     
+    /*$('#box13').css({
+        'background-color': '#737e80'
+    });*/
+    
     if(($(window).width() <= 845)){
         $box4.css({
             'text-align': 'center',
@@ -221,7 +225,7 @@ var zeroOB = function(){
     
     $box14.css({
         'background-color': '#737e80',
-        'border-bottom': '1px solid #737e80',
+        /*'border-bottom': '1px solid #737e80',*/
         'opacity': '1.0'
     });
     $box15.css({
@@ -233,17 +237,17 @@ var zeroOB = function(){
         'opacity': '1.0'
     });
     $box17.css({
-        'border-bottom': '3px solid #737e80',
+        /*'border-bottom': '3px solid #737e80',*/
         'background-color': '#737e80',
         'opacity': '1.0'
     });
     $box18.css({
-        'border-bottom': '2px solid #737e80',
+        /*'border-bottom': '2px solid #737e80',*/
         'background-color': '#737e80',
         'opacity': '1.0'
     });
     $box19.css({
-        'border-bottom': '2px solid #737e80',
+        /*'border-bottom': '2px solid #737e80',*/
         'background-color': '#737e80',
         'opacity': '1.0'
     });
@@ -496,7 +500,7 @@ var addNavStyles = function(bNum,onBox,offBox1,offBox2,onSlide,offSlide1,offSlid
 var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,onDesc,offSlide1,offSlide2,offSlide3,offSlide4,offSlide5,offBox1,offBox2,offBox3,offBox4,offBox5){
 
         onBox.css({
-            'border-bottom': '1px solid #e36a12',
+            /*'border-bottom': '1px solid #e36a12',*/
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
@@ -590,6 +594,9 @@ var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,o
             'border-left': '2px solid #737e80',
             'display': 'block'
         });
+        /*$('#box13').css({
+            'background-color': '#e36a12'
+        });*/
         
         onSlide.slideUp(0);
         onSlide.slideDown(500);
@@ -668,15 +675,15 @@ $(function(){
             zeroOB();
         });
     
-    /*$(window).resize(function(){
+    $(window).resize(function(){
         location.reload();
-    });*/
+    });
     
-    if(lockSlide == 'locked'){
+    /*if(lockSlide == 'locked'){
         $(window).resize(function(){
             location.reload();
         });
-    }
+    }*/
     
     // AJAX Functionality for Detailed Information Div
     $b4Lynk1.on('click',function(){
