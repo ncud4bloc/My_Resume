@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    min-width: 420px;
+    min-width: 320px;
     background-color: #04181c;
     border: 2px solid #04181c;
     border-top: 0;
@@ -109,7 +109,13 @@ body {
     text-align: left;
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 490px) { 
+  #myPhoto {
+    display: none;    
+  }
+}
+
+@media (max-width: 768px) { 
   .hdrImages2, .hdrImages3 {
     float: right;
     margin-top: 17px;
