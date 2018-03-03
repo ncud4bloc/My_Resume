@@ -605,7 +605,7 @@ var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,o
 var setInfo = function(){
         console.log('Correctly reading the click');
         lockSlide = 'locked'; 
-        $('body').addClass('stop-scrolling');
+        //$('body').addClass('stop-scrolling');
         zeroOB();
         $('.testItemBox').css({
             'display': 'block'
@@ -769,7 +769,7 @@ $(function(){
     $button.on('click',function(){
         console.log('Is reading the close command');
         lockSlide = 'open';
-        $('body').removeClass('stop-scrolling');
+        //$('body').removeClass('stop-scrolling');
         $('.testItemBox').css({
             'display': 'none'
         });
