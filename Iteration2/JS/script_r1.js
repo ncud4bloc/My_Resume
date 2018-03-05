@@ -504,7 +504,6 @@ var addNavStyles = function(bNum,onBox,offBox1,offBox2,onSlide,offSlide1,offSlid
 var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,onDesc,offSlide1,offSlide2,offSlide3,offSlide4,offSlide5,offBox1,offBox2,offBox3,offBox4,offBox5){
 
         onBox.css({
-            /*'border-bottom': '1px solid #e36a12',*/
             'background-color': '#e36a12',
             'opacity': '1.0'
         });
@@ -598,9 +597,11 @@ var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,o
             'border-left': '2px solid #737e80',
             'display': 'block'
         });
-        /*$('#box13').css({
-            'background-color': '#e36a12'
-        });*/
+        if((onBox == $box14) || (onBox == $box17)){
+            onSlide.css({
+                'border-left': '0px solid #e36a12'
+            });
+        }
         
         onSlide.slideUp(0);
         onSlide.slideDown(500);
