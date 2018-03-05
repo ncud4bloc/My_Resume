@@ -369,14 +369,18 @@ var addNavStyles = function(bNum,onBox,offBox1,offBox2,onSlide,offSlide1,offSlid
               'width': '60%'
           });
              
-          if(bNum === 1){
+          if (bNum === 1){
+            onBox.css({
+              'text-align': 'center',
+              'padding-right': '0px'
+            });
             offBox1.css({
               'text-align': 'right',
-              'padding-right': '30px'
+              'padding-right': '0px'
             });
             offBox2.css({
               'text-align': 'right',
-              'padding-right': '30px'
+              'padding-right': '0px'
             });
           } else if (bNum === 2){
             onBox.css({
@@ -385,7 +389,7 @@ var addNavStyles = function(bNum,onBox,offBox1,offBox2,onSlide,offSlide1,offSlid
             });
             offBox2.css({
               'text-align': 'right',
-              'padding-right': '30px'
+              'padding-right': '0px'
             });
           } else if (bNum === 3){
             onBox.css({
@@ -605,7 +609,7 @@ var addProjStyles = function(onBox,onSpan,onSlide,onEX,onTitle,onLink1,onLink2,o
 var setInfo = function(){
         console.log('Correctly reading the click');
         lockSlide = 'locked'; 
-        //$('body').addClass('stop-scrolling');
+        $('body').addClass('stop-scrolling');
         zeroOB();
         $('.testItemBox').css({
             'display': 'block'
@@ -769,7 +773,7 @@ $(function(){
     $button.on('click',function(){
         console.log('Is reading the close command');
         lockSlide = 'open';
-        //$('body').removeClass('stop-scrolling');
+        $('body').removeClass('stop-scrolling');
         $('.testItemBox').css({
             'display': 'none'
         });
