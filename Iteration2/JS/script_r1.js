@@ -55,38 +55,38 @@ var $b6Lynk2 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" i
 var $b6Lynk3 = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataNav" id="b6Lynk3"><p class="bHdg">Address</p></div>');
 
 var $b14Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Slide"></div>');
-var $b14Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b14Title"><p class="bHdg">Ruby Hangman:</p></div>');
-var $b14Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b14Link1"><p><a href="https://github.com/ncud4bloc/Hangman/" target="_blank">Source Code</a></p></div>');
+var $b14Title = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b14Title"><p class="bHdg">Ruby Hangman:</p></div>');
+var $b14Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b14Link1"><p><a href="https://github.com/ncud4bloc/Hangman/" target="_blank">Source Code</a></p></div>');
 var $b14Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b14Desc"><p>Hangman using command line inputs and displaying the stick-figure and letter guess status. Accesses external dictionary file and includes game-save functionality.</p></div>');
 
 var $b15Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b15Slide"></div>');
-var $b15Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b15Title"><p class="bHdg">P51 Motorcycle:</p></div>');
-var $b15Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b15Link1"><p><a href="https://github.com/ncud4bloc/My_Frame/" target="_blank">Source Code</a></p></div>');
-var $b15Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b15Link2"><p><a href="https://ncud4bloc.github.io/My_Frame/HTML/index.html" target="_blank">View in Browser</a></p></div>');
+var $b15Title = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b15Title"><p class="bHdg">P51 Motorcycle:</p></div>');
+var $b15Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b15Link1"><p><a href="https://github.com/ncud4bloc/My_Frame/" target="_blank">Source Code</a></p></div>');
+var $b15Link2 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b15Link2"><p><a href="https://ncud4bloc.github.io/My_Frame/HTML/index.html" target="_blank">View in Browser</a></p></div>');
 var $b15Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b15Desc"><p>Responsive motorcycle manufacturer homepage using my own grid-based framework. I thought that this company\'s homepage was a good concept poorly executed, and this is my "fix" (the company has since updated its page).</p></div>');
 
 var $b16Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b16Slide"></div>');
-var $b16Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b16Title"><p class="bHdg">Mesa Diner:</p></div>');
-var $b16Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b16Link1"><p><a href="https://github.com/ncud4bloc/Diner/" target="_blank">Source Code</a></p></div>');
-var $b16Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b16Link2"><p><a href="https://ncud4bloc.github.io/Diner/HTML/index.html" target="_blank">View in Browser</a></p></div>');
+var $b16Title = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b16Title"><p class="bHdg">Mesa Diner:</p></div>');
+var $b16Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b16Link1"><p><a href="https://github.com/ncud4bloc/Diner/" target="_blank">Source Code</a></p></div>');
+var $b16Link2 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b16Link2"><p><a href="https://ncud4bloc.github.io/Diner/HTML/index.html" target="_blank">View in Browser</a></p></div>');
 var $b16Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b16Desc"><p>DOM manipulation using JavaScript & jQuery.</p></div>');
 
 var $b17Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b17Slide"></div>');
-var $b17Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b17Title"><p class="bHdg">Image Slider:</p></div>');
-var $b17Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b17Link1"><p><a href="https://github.com/ncud4bloc/ImageSlider/" target="_blank">Source Code</a></p></div>');
-var $b17Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b17Link2"><p><a href="https://ncud4bloc.github.io/ImageSlider/HTML/index_STD.html" target="_blank">View in Browser</a></p></div>');
+var $b17Title = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b17Title"><p class="bHdg">Image Slider:</p></div>');
+var $b17Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b17Link1"><p><a href="https://github.com/ncud4bloc/ImageSlider/" target="_blank">Source Code</a></p></div>');
+var $b17Link2 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b17Link2"><p><a href="https://ncud4bloc.github.io/ImageSlider/HTML/index_STD.html" target="_blank">View in Browser</a></p></div>');
 var $b17Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b17Desc"><p>Image slider using jQuery DOM manipulation and effects.</p></div>');
 
 var $b18Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b18Slide"></div>');
-var $b18Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b18Title"><p class="bHdg">Google Map:</p></div>');
-var $b18Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b18Link1"><p><a href="https://github.com/ncud4bloc/GoogleMaps/" target="_blank">Source Code</a></p></div>');
-var $b18Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b18Link2"><p><a href="https://ncud4bloc.github.io/GoogleMaps/HTML/indexGM.html" target="_blank">View in Browser</a></p></div>');
+var $b18Title = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b18Title"><p class="bHdg">Google Map:</p></div>');
+var $b18Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b18Link1"><p><a href="https://github.com/ncud4bloc/GoogleMaps/" target="_blank">Source Code</a></p></div>');
+var $b18Link2 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b18Link2"><p><a href="https://ncud4bloc.github.io/GoogleMaps/HTML/indexGM.html" target="_blank">View in Browser</a></p></div>');
 var $b18Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b18Desc"><p>A simple responsive website incorporating the Google Maps API. Enter a location in decimal degrees along with a marker message (how about 37.3345, -122.009, "To Infinity!" for starters?)</p></div>');
 
 var $b19Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b19Slide"></div>');
-var $b19Title = $('<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 dataPage" id="b19Title"><p class="bHdg">Missile Command:</p></div>');
-var $b19Link1 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b19Link1"><p><a href="https://github.com/ncud4bloc/MissileCommand/" target="_blank">Source Code</a></p></div>');
-var $b19Link2 = $('<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 dataPage" id="b19Link2"><p><a href="https://ncud4bloc.github.io/MissileCommand/HTML/indexMC.html" target="_blank">View in Browser</a></p></div>');
+var $b19Title = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b19Title"><p class="bHdg">Missile Command:</p></div>');
+var $b19Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b19Link1"><p><a href="https://github.com/ncud4bloc/MissileCommand/" target="_blank">Source Code</a></p></div>');
+var $b19Link2 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b19Link2"><p><a href="https://ncud4bloc.github.io/MissileCommand/HTML/indexMC.html" target="_blank">View in Browser</a></p></div>');
 var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b19Desc"><p>Web-based Missile Command classic arcade game generated using jQuery and Canvas.</p></div>');
 
 /* -----  Functions  ----- */
@@ -611,7 +611,7 @@ var setInfo = function(){
         lockSlide = 'locked'; 
         $('body').addClass('stop-scrolling');
         zeroOB();
-        $('.testItemBox').css({
+        $('.Box').css({
             'display': 'block'
         });
         $formbox.css({
@@ -774,7 +774,7 @@ $(function(){
         console.log('Is reading the close command');
         lockSlide = 'open';
         $('body').removeClass('stop-scrolling');
-        $('.testItemBox').css({
+        $('.Box').css({
             'display': 'none'
         });
         $formbox.css({
