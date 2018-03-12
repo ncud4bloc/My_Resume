@@ -255,6 +255,7 @@ var zeroOB = function(){
 
 var nonZeroOB = function(){
     console.log('Slide Downs ready to display');
+    //location.reload();
 };
 
 var updateStyles = function(){
@@ -658,9 +659,15 @@ $(function(){
     $('#box7').on('click',function(){
         zeroOB();
     });
+    
     $('#box14').on('click',function(){
         showClkInfo($box14);
     });
+    
+    /*$('#box14').toggle(function(){
+        showClkInfo($box14);
+    });*/
+    
     $('#box15').on('click',function(){
         showClkInfo($box15);
     });
