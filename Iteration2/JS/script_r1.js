@@ -101,10 +101,6 @@ var unShowInfo = function(){
     
     openBox = 0;
     
-    /*$('#box13').css({
-        'background-color': '#737e80'
-    });*/
-    
     if(($(window).width() <= 845)){
         $box4.css({
             'text-align': 'center',
@@ -163,6 +159,14 @@ var showClkInfo = function(onClk){
 
 var zeroOB = function(){
     openBox = 0;
+    deActivate();
+    dataBoxes.box14Slide = 'off';
+    dataBoxes.box15Slide = 'off';
+    dataBoxes.box16Slide = 'off';
+    dataBoxes.box17Slide = 'off';
+    dataBoxes.box18Slide = 'off';
+    dataBoxes.box19Slide = 'off';
+
     $box4.css({
         'background-color': '#04181c',
         'padding-left': '0px',
@@ -204,7 +208,7 @@ var zeroOB = function(){
     });
     $b15Slide.slideUp(0);
     $b15Slide.css({
-        'display': 'none !important'
+        'display': 'none'
     });
     $b16Slide.slideUp(0);
     $b16Slide.css({
@@ -225,7 +229,6 @@ var zeroOB = function(){
     
     $box14.css({
         'background-color': '#737e80',
-        /*'border-bottom': '1px solid #737e80',*/
         'opacity': '1.0'
     });
     $box15.css({
@@ -237,17 +240,14 @@ var zeroOB = function(){
         'opacity': '1.0'
     });
     $box17.css({
-        /*'border-bottom': '3px solid #737e80',*/
         'background-color': '#737e80',
         'opacity': '1.0'
     });
     $box18.css({
-        /*'border-bottom': '2px solid #737e80',*/
         'background-color': '#737e80',
         'opacity': '1.0'
     });
     $box19.css({
-        /*'border-bottom': '2px solid #737e80',*/
         'background-color': '#737e80',
         'opacity': '1.0'
     });
@@ -632,15 +632,9 @@ $(function(){
     $('#box5').hover(showInfo,unShowInfo);
     $('#box6').hover(showInfo,unShowInfo);
     $('#box7').hover(zeroOB,nonZeroOB);
-    /*$('#box14').hover(showInfo,unShowInfo);
-    $('#box15').hover(showInfo,unShowInfo);
-    $('#box16').hover(showInfo,unShowInfo);
-    $('#box17').hover(showInfo,unShowInfo);
-    $('#box18').hover(showInfo,unShowInfo);
-    $('#box19').hover(showInfo,unShowInfo);*/
     $('#box20').hover(zeroOB,nonZeroOB);
     
-    $('#box2').on('click',function(){
+    $('#box1').on('click',function(){
         zeroOB();
     });
     $('#box3').on('click',function(){
@@ -687,16 +681,6 @@ $(function(){
             location.reload();
         });
     }
-    
-    /*$(window).resize(function(){
-        location.reload();
-    });
-    
-    if(lockSlide == 'locked'){
-        $(window).resize(function(){
-            location.reload();
-        });
-    }*/
     
     // AJAX Functionality for Detailed Information Div
     $b4Lynk1.on('click',function(){
