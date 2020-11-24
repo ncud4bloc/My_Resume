@@ -89,13 +89,6 @@ var $b19Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id=
 var $b19Link2 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b19Link2"><p><a href="https://ncud4bloc.github.io/Space_War/HTML/indexSWMP.html" target="_blank">View in Browser</a></p></div>');
 var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b19Desc"><p>Web-based spaceship battle arcade game generated using JavaScript and Canvas.</p></div>');
 
-/*
-var $b19Slide = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b19Slide"></div>');
-var $b19Title = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b19Title"><p class="bHdg">Missile Command:</p></div>');
-var $b19Link1 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b19Link1"><p><a href="https://github.com/ncud4bloc/MissileCommand/" target="_blank">Source Code</a></p></div>');
-var $b19Link2 = $('<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 dataPage" id="b19Link2"><p><a href="https://ncud4bloc.github.io/MissileCommand/HTML/indexMC.html" target="_blank">View in Browser</a></p></div>');
-var $b19Desc = $('<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dataPage" id="b19Desc"><p>Web-based Missile Command classic arcade game generated using jQuery and Canvas.</p></div>');
-*/
 
 /* -----  Functions  ----- */
 
